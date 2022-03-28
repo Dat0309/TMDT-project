@@ -2,30 +2,24 @@ import React from 'react'
 import "./Product.css"
 import StarIcon from '@mui/icons-material/Star';
 
-function Product({title, image, price, rating}) {
+function Product({ id, title, image, price, rating }) {
     return (
         <div className='product'>
             <div className="product_info">
-                <p>Nhà giả kim</p>
+                <p>{title}</p>
                 <p className="product_price">
                     <small>$</small>
-                    <strong>19.99</strong>
+                    <strong>{price}</strong>
                 </p>
                 <div className="product_rating">
-                    <p className="rating_icon">
-                        <StarIcon />
-                        <StarIcon />
-                        <StarIcon />
-                        <StarIcon />
-
-                    </p>
+                    {Array(rating).fill().map((_, i) => (<StarIcon />))}
                 </div>
 
 
             </div>
-            <img src="https://salt.tikicdn.com/ts/product/45/3b/fc/aa81d0a534b45706ae1eee1e344e80d9.jpg"
+            <img src={image}
                 alt="" />
-            <button> Add to Card </button>
+            <button> Thêm vào giỏ hàng </button>
 
         </div>
     )

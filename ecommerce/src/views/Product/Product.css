@@ -12,8 +12,9 @@
     z-index: 1;
 }
 
-.rating_icon{
-    color: yellow;
+.product_rating{
+    display: flex;
+    color: rgb(226, 226, 41);
 }
 
 .product > img {
