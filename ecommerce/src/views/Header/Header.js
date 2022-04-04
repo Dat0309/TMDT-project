@@ -24,14 +24,18 @@ function Header() {
             </div>
 
             <div className="header_nav">
-                <div className="header_option">
-                    <span className="header_optionLineOne">
-                        Xin chào
-                    </span>
-                    <span className="header_optionLineTwo">
-                        Đăng nhập
-                    </span>
-                </div>
+
+                <Link to='/login'>
+                    <div className="header_option">
+                        <span className="header_optionLineOne">
+                            Xin chào
+                        </span>
+                        <span className="header_optionLineTwo">
+                            Đăng nhập
+                        </span>
+                    </div>
+                </Link>
+
 
                 <div className="header_option">
                     <span className="header_optionLineOne">
