@@ -10,7 +10,7 @@ const ImportData = express.Router();
 ImportData.post(
   "/user",
   asyncHandler(async (req, res) => {
-    await User.remove({});
+    await User.deleteMany({});
     const importUser = await User.insertMany(users);
     res.send({ importUser });
   })
@@ -19,7 +19,7 @@ ImportData.post(
 ImportData.post(
   "/products",
   asyncHandler(async (req, res) => {
-    await Product.remove({});
+    await Product.deleteMany({});
     const importProducts = await Product.insertMany(products);
     res.send({ importProducts });
   })
