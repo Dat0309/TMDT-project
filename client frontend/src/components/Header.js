@@ -32,25 +32,25 @@ const Header = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6 d-flex align-items-center display-none">
-              <p>+255 768 356 890</p>
-              <p>info@zpunet.com</p>
+              <p>0865447141</p>
+              <p>anhtheboy011@gmail.com</p>
             </div>
             <div className=" col-12 col-lg-6 justify-content-center justify-content-lg-end d-flex align-items-center">
-              <Link to="">
+              <a href="https://www.facebook.com/toiladat.39" target="_blank" rel="noreferrer">
                 <i className="fab fa-facebook-f"></i>
-              </Link>
-              <Link to="">
+              </a>
+              <a href="https://www.instagram.com/__datmopmeodonart/" target="_blank" rel="noreferrer">
                 <i className="fab fa-instagram"></i>
-              </Link>
-              <Link to="">
+              </a>
+              <a href="https://www.youtube.com/channel/UCPs7ri32sHOqRS3C3iBxXvQ" target="_blank" rel="noreferrer">
                 <i className="fab fa-linkedin-in"></i>
-              </Link>
-              <Link to="">
+              </a>
+              <a href="https://www.youtube.com/channel/UCPs7ri32sHOqRS3C3iBxXvQ" target="_blank" rel="noreferrer">
                 <i className="fab fa-youtube"></i>
-              </Link>
-              <Link to="">
+              </a>
+              <a href="https://www.pinterest.com/anhtheboy011/_saved/" target="_blank" rel="noreferrer">
                 <i className="fab fa-pinterest-p"></i>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -81,7 +81,7 @@ const Header = () => {
                       </button>
                       <div className="dropdown-menu">
                         <Link className="dropdown-item" to="/profile">
-                          Profile
+                          THÔNG TIN CÁ NHÂN
                         </Link>
 
                         <Link
@@ -89,7 +89,7 @@ const Header = () => {
                           to="#"
                           onClick={logoutHandler}
                         >
-                          Logout
+                          ĐĂNG XUẤT
                         </Link>
                       </div>
                     </div>
@@ -106,11 +106,11 @@ const Header = () => {
                       </button>
                       <div className="dropdown-menu">
                         <Link className="dropdown-item" to="/login">
-                          Login
+                          Đăng nhập
                         </Link>
 
                         <Link className="dropdown-item" to="/register">
-                          Register
+                          Đăng ký
                         </Link>
                       </div>
                     </div>
@@ -126,11 +126,11 @@ const Header = () => {
                     <input
                       type="search"
                       className="form-control rounded search"
-                      placeholder="Search"
+                      placeholder="Tìm kiếm sản phẩm"
                       onChange={(e) => setKeyword(e.target.value)}
                     />
                     <button type="submit" className="search-button">
-                      search
+                      Tìm kiếm
                     </button>
                   </form>
                 </div>
@@ -151,11 +151,11 @@ const Header = () => {
                   <input
                     type="search"
                     className="form-control rounded search"
-                    placeholder="Search"
+                    placeholder="Tìm kiếm sản phẩm"
                     onChange={(e) => setKeyword(e.target.value)}
                   />
                   <button type="submit" className="search-button">
-                    search
+                    Tìm kiếm
                   </button>
                 </form>
               </div>
@@ -169,11 +169,11 @@ const Header = () => {
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      Hi, {userInfo.name}
+                      Chào, {userInfo.name}
                     </button>
                     <div className="dropdown-menu">
                       <Link className="dropdown-item" to="/profile">
-                        Profile
+                        Thông tin người dùng
                       </Link>
 
                       <Link
@@ -181,14 +181,14 @@ const Header = () => {
                         to="#"
                         onClick={logoutHandler}
                       >
-                        Logout
+                        Đăng xuất
                       </Link>
                     </div>
                   </div>
                 ) : (
                   <>
-                    <Link to="/register">Register</Link>
-                    <Link to="/login">Login</Link>
+                    <Link to="/register">Đăng ký</Link>
+                    <Link to="/login">Đăng nhập</Link>
                   </>
                 )}
 

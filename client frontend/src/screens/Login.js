@@ -46,16 +46,16 @@ const Login = ({ location, history }) => {
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Mật khẩu"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button type="submit">Login</button>
+          <button type="submit">Đăng nhập</button>
           <p>
             <Link
               to={redirect ? `/register?redirect=${redirect}` : "/register"}
             >
-              Create Account
+              Tạo tài khoản
             </Link>
           </p>
         </form>
