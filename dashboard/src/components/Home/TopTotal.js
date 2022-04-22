@@ -17,7 +17,7 @@ const TopTotal = (props) => {
               <i className="text-primary fas fa-usd-circle"></i>
             </span>
             <div className="text">
-              <h6 className="mb-1">Total Sales</h6>{" "}
+              <h6 className="mb-1">Tổng doanh thu</h6>{" "}
               <span>${totalSale.toFixed(0)}</span>
             </div>
           </article>
@@ -30,7 +30,7 @@ const TopTotal = (props) => {
               <i className="text-success fas fa-bags-shopping"></i>
             </span>
             <div className="text">
-              <h6 className="mb-1">Total Orders</h6>
+              <h6 className="mb-1">Tổng số đơn hàng</h6>
               {orders ? <span>{orders.length}</span> : <span>0</span>}
             </div>
           </article>
@@ -43,7 +43,7 @@ const TopTotal = (props) => {
               <i className="text-warning fas fa-shopping-basket"></i>
             </span>
             <div className="text">
-              <h6 className="mb-1">Total Products</h6>
+              <h6 className="mb-1">Thổng số sản phẩm</h6>
               {products ? <span>{products.length}</span> : <span>0</span>}
             </div>
           </article>

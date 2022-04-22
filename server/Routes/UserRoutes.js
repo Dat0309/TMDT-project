@@ -33,7 +33,7 @@ userRouter.post(
 userRouter.post(
   "/",
   asyncHandler(async (req, res) => {
-    const { name, email, password } = req.body;
+    const { name, email, password, telephone, avatar } = req.body;
 
     const userExists = await User.findOne({ email });
 
@@ -46,6 +46,8 @@ userRouter.post(
       name,
       email,
       password,
+      telephone,
+      avatar,
     });
 
     if (user) {
@@ -53,6 +55,8 @@ userRouter.post(
         _id: user._id,
         name: user.name,
         email: user.email,
+        telephone: user.telephone,
+        avatar: user.avatar,
         isAdmin: user.isAdmin,
         token: generateToken(user._id),
       });
@@ -75,6 +79,8 @@ userRouter.get(
         _id: user._id,
         name: user.name,
         email: user.email,
+        telephone: user.telephone,
+        avatar: user.avatar,
         isAdmin: user.isAdmin,
         createdAt: user.createdAt,
       });
@@ -103,6 +109,8 @@ userRouter.put(
         _id: updatedUser._id,
         name: updatedUser.name,
         email: updatedUser.email,
+        telephone: updatedUser.telephone,
+        avatar: updatedUser.avatar,
         isAdmin: updatedUser.isAdmin,
         createdAt: updatedUser.createdAt,
         token: generateToken(updatedUser._id),

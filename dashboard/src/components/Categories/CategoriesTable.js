@@ -13,9 +13,9 @@ const CategoriesTable = () => {
               </div>
             </th>
             <th>ID</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th className="text-end">Action</th>
+            <th>Tên</th>
+            <th>Mô tả</th>
+            <th className="text-end">Hành động</th>
           </tr>
         </thead>
         {/* Table Data */}

@@ -33,7 +33,7 @@ const OrderDetailmain = (props) => {
     <section className="content-main">
       <div className="content-header">
         <Link to="/orders" className="btn btn-dark text-white">
-          Back To Orders
+          Quay lại danh sách đơn hàng
         </Link>
       </div>
 
@@ -54,7 +54,7 @@ const OrderDetailmain = (props) => {
                 </span>
                 <br />
                 <small className="text-white mx-3 ">
-                  Order ID: {order._id}
+                  ID Đơn hàng: {order._id}
                 </small>
               </div>
               <div className="col-lg-6 col-md-6 ms-auto d-flex justify-content-end align-items-center">
@@ -62,7 +62,7 @@ const OrderDetailmain = (props) => {
                   className="form-select d-inline-block"
                   style={{ maxWidth: "200px" }}
                 >
-                  <option>Change status</option>
+                  <option>Thay đổi tình trạng</option>
                   <option>Awaiting payment</option>
                   <option>Confirmed</option>
                   <option>Shipped</option>
@@ -89,7 +89,7 @@ const OrderDetailmain = (props) => {
                 <div className="box shadow-sm bg-light">
                   {order.isDelivered ? (
                     <button className="btn btn-success col-12">
-                      DELIVERED AT ({" "}
+                      ĐÃ VẬN CHUYỂN VÀO ({" "}
                       {moment(order.isDeliveredAt).format("MMM Do YY")})
                     </button>
                   ) : (
@@ -99,7 +99,7 @@ const OrderDetailmain = (props) => {
                         onClick={deliverHandler}
                         className="btn btn-dark col-12"
                       >
-                        MARK AS DELIVERED
+                        ĐÁNH DẤU ĐÃ VẬN CHUYỂN
                       </button>
                     </>
                   )}

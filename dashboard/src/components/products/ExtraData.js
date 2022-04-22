@@ -7,7 +7,7 @@ const ExtraData = () => {
         <div className="card-body">
           {/* categories */}
           <>
-            <h5 className="mb-3">Categories</h5>
+            <h5 className="mb-3">Danh mục</h5>
             <div className="form-check">
               <input
                 className="form-check-input"
@@ -16,7 +16,7 @@ const ExtraData = () => {
                 id="product-cat"
               />
               <label className="form-check-label" htmlFor="product-cat">
-                Shirt
+                Áo thun
               </label>
             </div>
             <div className="form-check">
@@ -38,7 +38,7 @@ const ExtraData = () => {
                 id="product-cat-2"
               />
               <label className="form-check-label" htmlFor="product-cat-2">
-                Sneakers
+                Giày
               </label>
             </div>
             <div className="form-check">
@@ -49,7 +49,7 @@ const ExtraData = () => {
                 id="product-cat-3"
               />
               <label className="form-check-label" htmlFor="product-cat-3">
-                Joggers
+                Quần jogger
               </label>
             </div>
             <div className="form-check">
@@ -60,7 +60,7 @@ const ExtraData = () => {
                 id="product-cat-4"
               />
               <label className="form-check-label" htmlFor="product-cat-4">
-                Vests
+                Áo vests
               </label>
             </div>
             <div className="form-check">
@@ -82,13 +82,13 @@ const ExtraData = () => {
                 id="product-cat-8"
               />
               <label className="form-check-label" htmlFor="product-cat-8">
-                Shorts
+                Quần Shorts
               </label>
             </div>
           </>
           {/* Colors */}
           <>
-            <h5 className="mb-3 mt-4">Colors</h5>
+            <h5 className="mb-3 mt-4">Màu</h5>
             <div className="form-check">
               <input
                 className="form-check-input"
@@ -97,7 +97,7 @@ const ExtraData = () => {
                 id="product-cat"
               />
               <label className="form-check-label" htmlFor="product-cat">
-                Yellow
+                Vàng
               </label>
             </div>
             <div className="form-check">
@@ -108,7 +108,7 @@ const ExtraData = () => {
                 id="product-cat-1"
               />
               <label className="form-check-label" htmlFor="product-cat-1">
-                Green
+                Xanh
               </label>
             </div>
             <div className="form-check">
@@ -119,7 +119,7 @@ const ExtraData = () => {
                 id="product-cat-2"
               />
               <label className="form-check-label" htmlFor="product-cat-2">
-                Blue
+                Xanh dương
               </label>
             </div>
           </>

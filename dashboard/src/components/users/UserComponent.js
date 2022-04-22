@@ -17,10 +17,10 @@ const UserComponent = () => {
   return (
     <section className="content-main">
       <div className="content-header">
-        <h2 className="content-title">Customers</h2>
+        <h2 className="content-title">QUẢN LÝ NGƯỜI DÙNG</h2>
         <div>
           <Link to="#" className="btn btn-primary">
-            <i className="material-icons md-plus"></i> Create new
+            <i className="material-icons md-plus"></i> Tạo mới
           </Link>
         </div>
       </div>
@@ -31,7 +31,7 @@ const UserComponent = () => {
             <div className="col-lg-4 col-md-6 me-auto">
               <input
                 type="text"
-                placeholder="Search..."
+                placeholder="Tìm kiếm người dùng, người yêu, siêu em gái..."
                 className="form-control"
               />
             </div>
@@ -77,7 +77,7 @@ const UserComponent = () => {
                         {user.isAdmin === true ? (
                           <p className="m-0">Admin</p>
                         ) : (
-                          <p className="m-0">Customer</p>
+                          <p className="m-0">Khách hàng</p>
                         )}
 
                         <p>

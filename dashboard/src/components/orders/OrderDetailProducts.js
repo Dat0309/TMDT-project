@@ -19,11 +19,11 @@ const OrderDetailProducts = (props) => {
     <table className="table border table-lg">
       <thead>
         <tr>
-          <th style={{ width: "40%" }}>Product</th>
-          <th style={{ width: "20%" }}>Unit Price</th>
-          <th style={{ width: "20%" }}>Quantity</th>
+          <th style={{ width: "40%" }}>Mặt hàng</th>
+          <th style={{ width: "20%" }}>Đơn giá</th>
+          <th style={{ width: "20%" }}>Số lượng</th>
           <th style={{ width: "20%" }} className="text-end">
-            Total
+            Tổng tiền
           </th>
         </tr>
       </thead>
@@ -53,27 +53,27 @@ const OrderDetailProducts = (props) => {
           <td colSpan="4">
             <article className="float-end">
               <dl className="dlist">
-                <dt>Subtotal:</dt> <dd>${order.itemsPrice}</dd>
+                <dt>Tạm tính:</dt> <dd>${order.itemsPrice}</dd>
               </dl>
               <dl className="dlist">
-                <dt>Shipping cost:</dt> <dd>${order.shippingPrice}</dd>
+                <dt>Phí vận chuyển:</dt> <dd>${order.shippingPrice}</dd>
               </dl>
               <dl className="dlist">
-                <dt>Grand total:</dt>
+                <dt>Thành tiền:</dt>
                 <dd>
                   <b className="h5">${order.totalPrice}</b>
                 </dd>
               </dl>
               <dl className="dlist">
-                <dt className="text-muted">Status:</dt>
+                <dt className="text-muted">Tình trạng:</dt>
                 <dd>
                   {order.isPaid ? (
                     <span className="badge rounded-pill alert alert-success text-success">
-                      Payment done
+                      Đã thanh toán
                     </span>
                   ) : (
                     <span className="badge rounded-pill alert alert-danger text-danger">
-                      Not Paid
+                      Chưa thanh toán
                     </span>
                   )}
                 </dd>

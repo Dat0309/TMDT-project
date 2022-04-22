@@ -11,7 +11,7 @@ const OrderMain = () => {
   return (
     <section className="content-main">
       <div className="content-header">
-        <h2 className="content-title">Orders</h2>
+        <h2 className="content-title">QUẢN LÝ ĐƠN HÀNG</h2>
       </div>
 
       <div className="card mb-4 shadow-sm">
@@ -20,23 +20,23 @@ const OrderMain = () => {
             <div className="col-lg-4 col-md-6 me-auto">
               <input
                 type="text"
-                placeholder="Search..."
+                placeholder="Tìm kiếm đơn hàng, người yêu, em gái..."
                 className="form-control p-2"
               />
             </div>
             <div className="col-lg-2 col-6 col-md-3">
               <select className="form-select">
-                <option>Status</option>
-                <option>Active</option>
-                <option>Disabled</option>
-                <option>Show all</option>
+                <option>Tình trạng</option>
+                <option>Xác nhận</option>
+                <option>Đã huỷ</option>
+                <option>Tất cả</option>
               </select>
             </div>
             <div className="col-lg-2 col-6 col-md-3">
               <select className="form-select">
-                <option>Show 20</option>
-                <option>Show 30</option>
-                <option>Show 40</option>
+                <option>Hiển thị 20</option>
+                <option>Hiển thị 30</option>
+                <option>Hiển thị 40</option>
               </select>
             </div>
           </div>

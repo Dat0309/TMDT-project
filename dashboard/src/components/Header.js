@@ -72,7 +72,7 @@ const Header = () => {
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="#">
-              English
+              VietNam
             </Link>
           </li>
           <li className="dropdown nav-item">
@@ -85,17 +85,17 @@ const Header = () => {
             </Link>
             <div className="dropdown-menu dropdown-menu-end">
               <Link className="dropdown-item" to="/">
-                My profile
+                Thông tin cửa hàng
               </Link>
               <Link className="dropdown-item" to="#">
-                Settings
+                Cài đặt
               </Link>
               <Link
                 onClick={logoutHandler}
                 className="dropdown-item text-danger"
                 to="#"
               >
-                Exit
+                Thoát
               </Link>
             </div>
           </li>

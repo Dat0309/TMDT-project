@@ -58,7 +58,7 @@ const ProfileTabs = () => {
       <form className="row  form-container" onSubmit={submitHandler}>
         <div className="col-md-6">
           <div className="form">
-            <label for="account-fn">UserName</label>
+            <label for="account-fn">Tên người dùng</label>
             <input
               className="form-control"
               type="text"
@@ -71,7 +71,7 @@ const ProfileTabs = () => {
 
         <div className="col-md-6">
           <div className="form">
-            <label for="account-email">E-mail Address</label>
+            <label for="account-email">Địa chỉ E-mail</label>
             <input
               className="form-control"
               type="email"
@@ -83,7 +83,7 @@ const ProfileTabs = () => {
         </div>
         <div className="col-md-6">
           <div className="form">
-            <label for="account-pass">New Password</label>
+            <label for="account-pass">Mật khẩu mới</label>
             <input
               className="form-control"
               type="password"
@@ -94,7 +94,7 @@ const ProfileTabs = () => {
         </div>
         <div className="col-md-6">
           <div className="form">
-            <label for="account-confirm-pass">Confirm Password</label>
+            <label for="account-confirm-pass">Xác nhận mật khẩu</label>
             <input
               className="form-control"
               type="password"
@@ -103,7 +103,7 @@ const ProfileTabs = () => {
             />
           </div>
         </div>
-        <button type="submit">Update Profile</button>
+        <button type="submit">Chỉnh sửa thông tin</button>
       </form>
     </>
   );

@@ -8,6 +8,7 @@ const products = [
     countInStock: 3,
     rating: 4,
     numReviews: 4,
+    active: true,
   },
   {
     name: "Velcro Sneakers For Boys & Girls  (Blue)",
@@ -18,6 +19,7 @@ const products = [
     countInStock: 10,
     rating: 2,
     numReviews: 2,
+    active: true,
   },
   {
     name: "Sesame Street Unisex-Child ELMO Puppet Slipper",
@@ -28,6 +30,7 @@ const products = [
     countInStock: 0,
     rating: 3.5,
     numReviews: 3,
+    active: true,
   },
   {
     name: "Lace Casual Boots For Boys & Girls  (Tan)",
@@ -38,6 +41,7 @@ const products = [
     countInStock: 10,
     rating: 5,
     numReviews: 9,
+    active: true,
   },
   {
     name: "Lace Walking Shoes For Boys & Girls  (Pink)",
@@ -48,6 +52,7 @@ const products = [
     countInStock: 7,
     rating: 2,
     numReviews: 2,
+    active: true,
   },
   {
     name: "Women Red Heels Sandal",
@@ -58,6 +63,7 @@ const products = [
     countInStock: 0,
     rating: 0,
     numReviews: 0,
+    active: true,
   },
 ];
 

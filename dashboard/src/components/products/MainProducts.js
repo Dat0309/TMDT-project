@@ -22,10 +22,10 @@ const MainProducts = () => {
   return (
     <section className="content-main">
       <div className="content-header">
-        <h2 className="content-title">Products</h2>
+        <h2 className="content-title">QUẢN LÝ MẶT HÀNG</h2>
         <div>
           <Link to="/addproduct" className="btn btn-primary">
-            Create new
+            Tạo mới
           </Link>
         </div>
       </div>
@@ -36,23 +36,23 @@ const MainProducts = () => {
             <div className="col-lg-4 col-md-6 me-auto ">
               <input
                 type="search"
-                placeholder="Search..."
+                placeholder="Tìm kiếm mặt hàng, nguòi yêu, siêu em gái..."
                 className="form-control p-2"
               />
             </div>
             <div className="col-lg-2 col-6 col-md-3">
               <select className="form-select">
-                <option>All category</option>
-                <option>Electronics</option>
-                <option>Clothings</option>
-                <option>Something else</option>
+                <option>Tất cả danh mục</option>
+                <option>Điện tử</option>
+                <option>Áo khoác</option>
+                <option>Khác</option>
               </select>
             </div>
             <div className="col-lg-2 col-6 col-md-3">
               <select className="form-select">
-                <option>Latest added</option>
-                <option>Cheap first</option>
-                <option>Most viewed</option>
+                <option>Mới nhất</option>
+                <option>Rẻ nhất</option>
+                <option>Nhiều lượt xem</option>
               </select>
             </div>
           </div>
