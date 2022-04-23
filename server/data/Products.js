@@ -9,6 +9,8 @@ const products = [
     rating: 4,
     numReviews: 4,
     active: true,
+    discountID: "",
+    categoryId: "62640397576ff9cf68492b14",
   },
   {
     name: "Velcro Sneakers For Boys & Girls  (Blue)",
@@ -20,6 +22,8 @@ const products = [
     rating: 2,
     numReviews: 2,
     active: true,
+    discountID: "",
+    categoryId: "62640397576ff9cf68492b14",
   },
   {
     name: "Sesame Street Unisex-Child ELMO Puppet Slipper",
@@ -31,6 +35,8 @@ const products = [
     rating: 3.5,
     numReviews: 3,
     active: true,
+    discountID: "",
+    categoryId: "62640397576ff9cf68492b14",
   },
   {
     name: "Lace Casual Boots For Boys & Girls  (Tan)",
@@ -42,6 +48,8 @@ const products = [
     rating: 5,
     numReviews: 9,
     active: true,
+    discountID: "",
+    categoryId: "62640397576ff9cf68492b14",
   },
   {
     name: "Lace Walking Shoes For Boys & Girls  (Pink)",
@@ -53,6 +61,8 @@ const products = [
     rating: 2,
     numReviews: 2,
     active: true,
+    discountID: "",
+    categoryId: "62640397576ff9cf68492b14",
   },
   {
     name: "Women Red Heels Sandal",
@@ -64,6 +74,8 @@ const products = [
     rating: 0,
     numReviews: 0,
     active: true,
+    discountID: "",
+    categoryId: "62640397576ff9cf68492b14",
   },
 ];
 
