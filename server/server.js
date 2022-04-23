@@ -7,6 +7,7 @@ import { errorHandler, notFound } from "./Middleware/Errors.js";
 import userRouter from "./Routes/UserRoutes.js";
 import orderRouter from "./Routes/orderRoutes.js";
 import discountRoute from "./Routes/discountRoutes.js";
+import categoriesRoute from "./Routes/categoriesRoutes.js";
 
 dotenv.config();
 connectDatabase();
@@ -17,6 +18,7 @@ app.use(express.json());
 app.use("/api/import", ImportData);
 app.use("/api/products", productRoute);
 app.use("/api/discount", discountRoute);
+app.use("/api/categories", categoriesRoute);
 app.use("/api/users", userRouter);
 app.use("/api/orders", orderRouter);
 app.get("/api/config/paypal", (req, res) => {
