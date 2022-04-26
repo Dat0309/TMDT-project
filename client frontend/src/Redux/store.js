@@ -20,6 +20,7 @@ import {
   orderPayReducer,
 } from "./Reducers/OrderReducres";
 import { categoriesReducer, categoryDetailsReducer } from "./Reducers/CategoriesReducers";
+import { discountDetailsReducer, discountsReducer } from "./Reducers/discountReducers";
 
 const reducer = combineReducers({
   productList: productListReducer,
@@ -27,6 +28,8 @@ const reducer = combineReducers({
   productReviewCreate: productCreateReviewReducer,
   categoriesList: categoriesReducer,
   categoryDetails: categoryDetailsReducer,
+  discountList: discountsReducer,
+  discountDetails: discountDetailsReducer,
   cart: cartReducer,
   userLogin: userLoginReducer,
   userRegister: userRegisterReducer,

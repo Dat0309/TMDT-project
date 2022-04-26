@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { listProduct } from "../../Redux/Actions/ProductActions";
 import Loading from "../LoadingError/Loading";
 import Message from "../LoadingError/Error";
+import { NavBtnLink } from "../Navbar/NavElement";
 
 const ShopSection = (props) => {
   const { keyword, pagenumber } = props;
@@ -33,6 +34,7 @@ const ShopSection = (props) => {
                 ) : (
                   <>
                     {products.map((product) => (
+
                       <div
                         className="shop col-lg-4 col-md-6 col-sm-6"
                         key={product._id}
@@ -49,13 +51,22 @@ const ShopSection = (props) => {
                               <Link to={`/products/${product._id}`}>
                                 {product.name}
                               </Link>
-                            </p>
 
+                            </p>
+                            {product.discountID !== "" ? (
+                              <p>
+                                <NavBtnLink to={''}>
+                                  Đang hạ giá
+                                </NavBtnLink>
+                              </p>
+                              
+                            ): <p></p>}
+                            
                             <Rating
                               value={product.rating}
                               text={`${product.numReviews} Đánh giá`}
                             />
-                            <h3>${product.price}</h3>
+                            <h3>{product.price}Đ</h3>
                           </div>
                         </div>
                       </div>

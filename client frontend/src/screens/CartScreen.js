@@ -8,6 +8,7 @@ const CartScreen = ({ match, location, history }) => {
   window.scrollTo(0, 0);
   const dispatch = useDispatch();
   const productId = match.params.id;
+
   const qty = location.search ? Number(location.search.split("=")[1]) : 1;
 
   const cart = useSelector((state) => state.cart);
@@ -88,7 +89,7 @@ const CartScreen = ({ match, location, history }) => {
                 </div>
                 <div className="cart-price mt-3 mt-md-0 col-md-2 align-items-sm-end align-items-start  d-flex flex-column justify-content-center col-sm-7">
                   <h6>GIÁ</h6>
-                  <h4>${item.price}</h4>
+                  <h4>{item.price}Đ</h4>
                 </div>
               </div>
             ))}
@@ -96,7 +97,7 @@ const CartScreen = ({ match, location, history }) => {
             {/* End of cart iterms */}
             <div className="total">
               <span className="sub">Tổng tiền:</span>
-              <span className="total-price">{total}.000đ</span>
+              <span className="total-price">{total}Đ</span>
             </div>
             <hr />
             <div className="cart-buttons d-flex align-items-center row">

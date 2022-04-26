@@ -11,6 +11,7 @@ import {
 import Loading from "../components/LoadingError/Loading";
 import { PRODUCT_CREATE_REVIEW_RESET } from "../Redux/Constants/ProductConstants";
 import moment from "moment";
+import { discountDetails } from "../Redux/Actions/discountAction";
 
 const SingleProduct = ({ history, match }) => {
   const [qty, setQty] = useState(1);
@@ -18,6 +19,7 @@ const SingleProduct = ({ history, match }) => {
   const [comment, setComment] = useState("");
 
   const productId = match.params.id;
+
   const dispatch = useDispatch();
 
   const productDetails = useSelector((state) => state.productDetails);
@@ -25,6 +27,8 @@ const SingleProduct = ({ history, match }) => {
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
   const productReviewCreate = useSelector((state) => state.productReviewCreate);
+  const disDetails = useSelector((state) => state.discountDetails);
+  const {discount} = disDetails;
   const {
     loading: loadingCreateReview,
     error: errorCreateReview,
@@ -39,12 +43,14 @@ const SingleProduct = ({ history, match }) => {
       dispatch({ type: PRODUCT_CREATE_REVIEW_RESET });
     }
     dispatch(listProductDetails(productId));
-  }, [dispatch, productId, successCreateReview]);
+    dispatch(discountDetails(product.discountID));
+  }, [dispatch, productId, successCreateReview, product.discountID]);
 
   const AddToCartHandle = (e) => {
     e.preventDefault();
     history.push(`/cart/${productId}?qty=${qty}`);
   };
+
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(
@@ -80,7 +86,10 @@ const SingleProduct = ({ history, match }) => {
                   <div className="product-count col-lg-7 ">
                     <div className="flex-box d-flex justify-content-between align-items-center">
                       <h6>Giá</h6>
-                      <span>${product.price}</span>
+                      {(discount != null && discount.discount_percent != null) ? (
+                        <span><p>Giá gốc: {product.price}Đ</p> Giảm còn: {product.price-(product.price*discount.discount_percent)}Đ</span>
+                      ): <span>{product.price}Đ</span>}
+                      
                     </div>
                     <div className="flex-box d-flex justify-content-between align-items-center">
                       <h6>Tình trạng</h6>
@@ -96,6 +105,13 @@ const SingleProduct = ({ history, match }) => {
                         value={product.rating}
                         text={`${product.numReviews} đánh giá`}
                       />
+                    </div>
+                    <div className="flex-box d-flex justify-content-between align-items-center">
+                      <h6>Giảm giá</h6>
+                      {discount != null ? (
+                        discount.name
+                      ) : <p>Không</p>}
+                      
                     </div>
                     {product.countInStock > 0 ? (
                       <>
