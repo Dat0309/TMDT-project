@@ -13,11 +13,11 @@ productRoute.get(
     const page = Number(req.query.pageNumber) || 1;
     const keyword = req.query.keyword
       ? {
-          name: {
-            $regex: req.query.keyword,
-            $options: "i",
-          },
-        }
+        name: {
+          $regex: req.query.keyword,
+          $options: "i",
+        },
+      }
       : {};
     const count = await Product.countDocuments({ ...keyword });
     const products = await Product.find({ ...keyword })
@@ -50,6 +50,30 @@ productRoute.get(
       res.status(404);
       throw new Error("Product not Found");
     }
+  })
+);
+
+// GET ALL PRODUCT BY CATEGORYID
+productRoute.get(
+  "/category-id/:categoryId",
+  asyncHandler(async (req, res) => {
+    const pageSize = 12;
+    const page = Number(req.query.pageNumber) || 1;
+    const categoryId = req.params.categoryId
+    const keyword = req.query.keyword
+      ? {
+        name: {
+          $regex: req.query.keyword,
+          $options: "i",
+        },
+      }
+      : {};
+    const count = await Product.countDocuments({ ...keyword });
+    const products = await Product.find({ "categoryId" : categoryId})
+      .limit(pageSize)
+      .skip(pageSize * (page - 1))
+      .sort({ _id: -1 });
+    res.json({ products, page, pages: Math.ceil(count / pageSize) });
   })
 );
 

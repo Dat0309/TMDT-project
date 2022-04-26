@@ -8,8 +8,6 @@ import {
   NavLink,
   Bars,
   NavMenu,
-  NavBtn,
-  NavBtnLink,
 } from './NavElement';
 
 const Navbar = () => {
@@ -20,7 +18,6 @@ const Navbar = () => {
 
   useEffect(() => {
     dispatch(listCategory());
-
   }, [dispatch]);
 
   return (
@@ -38,7 +35,7 @@ const Navbar = () => {
           ) : (
             <>
               {categories.map((category) => (
-                <NavLink to='' >
+                <NavLink to={`/category/${category._id}`} >
                   {category.categoryName}
                 </NavLink>
               ))}

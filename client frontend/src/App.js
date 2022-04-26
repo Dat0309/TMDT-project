@@ -15,6 +15,7 @@ import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 import OrderScreen from "./screens/OrderScreen";
 import NotFound from "./screens/NotFound";
 import PrivateRouter from "./PrivateRouter";
+import ShopSectionCategory from "./components/homeComponents/ShopSectionByCategory";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
           exact
         />
         <Route path="/products/:id" component={SingleProduct} />
+        <Route path="/category/:id" component={ShopSectionCategory} />
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
         <PrivateRouter path="/profile" component={ProfileScreen} />
