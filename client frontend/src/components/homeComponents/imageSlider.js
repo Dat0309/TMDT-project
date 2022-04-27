@@ -12,7 +12,7 @@ const ImageSlider = () => {
   const { loading, error, products, } = productList;
 
   const [current, setCurrent] = useState(0);
-  const length = products.length;
+  const length = 5;
 
   useEffect(() => {
     dispatch(listProduct());
@@ -44,7 +44,7 @@ const ImageSlider = () => {
         ) : (
           <>
             {products.map((slide, index) => {
-              if (slide.rating >= 4) {
+              // if (slide.rating >= 4) {
                 return (
                   <div
                     className={index === current ? 'slide active' : 'slide'}
@@ -55,8 +55,8 @@ const ImageSlider = () => {
                     )}
                   </div>
                 );
-              }
-              return <></>;
+              // }
+              // return <></>;
             })}
           </>
 
