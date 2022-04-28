@@ -1,9 +1,9 @@
 const products = [
   {
     name: "Giày nam sneaker da thật ELLY HOMME – EGTM19",
-    categoryId: "Sneaker",
+    categoryId: "62640397576ff9cf68492b13",
     description: "Trong bất kỳ hoàn cảnh nào, đôi giày nam sneaker da thật ELLY HOMME cũng có thể khiến chủ nhân trông thật sang trọng và tinh tế. Và giày thể thao luôn là lựa chọn hàng đầu trong tủ đồ của phái mạnh. ELLY HOMME giới thiệu đến các bạn nam sản phẩm giày sneaker da ELLY HOMME – EGTM19 mang phong cách trẻ trung, thời trang nhưng không kém phần lịch lãm",
-    price: "1.250.000đ",
+    price: 1250000,
     image: "https://cdn.elly.vn/uploads/2020/09/28052016/giay-nam-cao-cap-da-that-EGTM19-16.jpg",
     imageBanner: "https://cdn.elly.vn/uploads/2020/09/28051942/giay-nam-cao-cap-da-that-EGTM19-7.jpg",
     countInStock: 20,
@@ -14,7 +14,7 @@ const products = [
    },
    {
     name: "Nike Dior x Air Jordan 1 High",
-    categoryId: "Nike",
+    categoryId: "62640397576ff9cf68492b14",
     description: "Chắc chắn khi tìm kiếm những đôi sneaker cho xu hướng giày năm 2022 không thể bỏ qua được đôi giày Nike Air Jordan 1 Dior. Đây là một trong những đôi giày “làm mưa, làm gió” khiến các bạn trẻ đều mong muốn sở hữu nó trong tủ giày của mình.",
     price: 1198000,
     image: "https://sneakerhanoi.com/cdn1/images/202106/thumb_img/giay-nike-air-jordan-1-high-x-dior-rep-11-thumb-P1925-1623131590332.jpg",
@@ -27,7 +27,7 @@ const products = [
    },
    {
     name: "Air Force 1 Low Just Do It Rep 1:1",
-    categoryId: "Nike",
+    categoryId: "62640397576ff9cf68492b14",
     description: "Giày Nike nữ rep 1 1 luôn tinh tế trong từng đường nét, thể hiện sự năng động và trẻ trung, có những điểm nhấn đặc sắc và nổi bật.",
     price: 699000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/07/air-Force-1-low-Just-do-it-rep-11-350x350.jpg",
@@ -40,7 +40,7 @@ const products = [
    },
    {
     name: "AIR FORCE 1 LOW LV8 GS DOUBLE SWOOSH NIKE Hồng Baby Rep 1:1",
-    categoryId: "Nike",
+    categoryId: "62640397576ff9cf68492b14",
     description: "Mẫu giày Nike đẹp với cái tên AIR FORCE 1 LOW LV8 GS ‘DOUBLE SWOOSH’ đang làm mưa làm gió trên cộng đồng trong thời gian gần đây",
     price: 699000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/05/AIR-FORCE-1-LOW-LV8-GS-%E2%80%98DOUBLE-SWOOSH-NIKE-Hong.jpg",
@@ -53,7 +53,7 @@ const products = [
    },
    {
     name: "Air Force 1 Shadow Pale Ivory Rep 1:1",
-    categoryId: "Nike",
+    categoryId: "62640397576ff9cf68492b14",
     description: "Nike Air Force 1 được thiết kế hướng tới sự đơn giản nhưng vô cùng tinh tế. Đây là sự lựa chọn hoàn hảo cho các tín đồ yêu thể thao khi có thể dễ dàng phối hợp trang phục hằng ngày để khẳng định phong cách thời trang.",
     price: 699000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/07/air-Force-1-shadow-pale-ivory-rep-11-350x350.jpg",
@@ -66,7 +66,7 @@ const products = [
    },
    {
     name: "Air Force 1 Shadow Phantom Rep 1:1",
-    categoryId: "Nike",
+    categoryId: "62640397576ff9cf68492b14",
     description: "Air Force 1 Shadow Phantom Nằm trong bộ sưu tập của Air Force 1, cuộc hành trình của đôi giày Nike có Air Force 1, Air Force 2, Air Force 3, Air Force STS, Air Force 5, Air Force XXV và Air Force 09.nnVới xu hướng của thị trường thì đây vẫn được xem là dòng ăn khách nhất bởi sự duyên dáng cũng như độ bền của Nike tích hợp cho từng đôi giày,",
     price: 699000,
     image: "https://1sneaker.vn/wp-content/uploads/2020/07/Air-Force-1-Shadow-Phantom-2-600x600.jpg",
@@ -79,7 +79,7 @@ const products = [
    },
    {
     name: "Giày Af1 Đổi Màu Rep 1 1 SIÊU ĐẸP VÀ chất lượng",
-    categoryId: "Nike",
+    categoryId: "62640397576ff9cf68492b14",
     description: "NIKE AF1 ‘ĐỔI MÀU SWOOSH UV’là cái tên đang hót hiện nay nếu cộng đồng sneaker đang phát số vì em nó, đôi giày có hiệu ứng khi ra ngoài ánh nắng được đánh giá từ cộng đồng mạng cực gắt về những mẫu giày của AF 1 hiện nay trên thị trường.",
     price: 739000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/08/nike-aF1-doi-mau-swoosh-uv-8-350x350.jpg",
@@ -92,7 +92,7 @@ const products = [
    },
    {
     name: "Giày Nike Af1 Sữa Viền Vay Xanh Hàng đẹp",
-    categoryId: "Nike",
+    categoryId: "62640397576ff9cf68492b14",
     description: "Có thể nói dòng Nike Af1 vẫn là mẫu giày được nhiều người yêu thích trong năm nay, đôi giày luôn nhận được sự yêu thích của mọi người, với mẫu giày đẹp và đậm chất thể thao vẫn đc các chị em săn lùng,",
     price: 699000,
     image: "https://1sneaker.vn/wp-content/uploads/2022/02/giay-nike-af1-sua-vien-vay-xanh-hang-dep-5.jpg",
@@ -105,7 +105,7 @@ const products = [
    },
    {
     name: "Giày MLB New York Yankees Big Ball Chunky A Rep 1:1",
-    categoryId: "MLB",
+    categoryId: "6264204d25ebccdc847d3109",
     description: "Mẫu MLB New York Yankees hàng được các bạn trẻ yêu thích đến từ thương hiệu Hàn Quốc. Thời gian gần đây mẫu giày này đang được làm mưa làm gió trên thị trường được nhiều người nổi tiếng săn lùng những đôi giày đến từ thương hiệu MLB Này.",
     price: 699000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/04/MLB-New-York-Yankees-Big-Ball-Chunky-A.jpg",
@@ -118,7 +118,7 @@ const products = [
    },
    {
     name: "Giày MLB Hologram gót vàng đẹp Rep 1:1",
-    categoryId: "MLB",
+    categoryId: "6264204d25ebccdc847d3109",
     description: "MLB Hologram gót vàng REPLICA 1:1 Đẹp, bản chuẩn Hàn Quốc, mẫu giày MLB GÓT Vàng với thiết kế hầm hố đã làm đốn tym bao nhiêu người say đắm về em nó",
     price: 899000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/05/mlb-bigball-chunky-shiny-new-york-yankees-350x350.jpg",
@@ -131,7 +131,7 @@ const products = [
    },
    {
     name: "Giày MLB Korea New York Đế EVa Rep™ 1:1",
-    categoryId: "MLB",
+    categoryId: "6264204d25ebccdc847d3109",
     description: "Giày MLB Korea New York Đế EVa đôi giày được là mẫu mới nhất của dòng MLB mới đây được ra mắt, đôi giày vẫn là mẫu thiết kế cũ nhưng lần này được bo mềm mại và có xu hướng đơn giản hơn rất nhiều",
     price: 699000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/11/giay-mlb-korea-new-york-de-eva-rep%E2%84%A2-11-dep-chat-1sneaker-350x350.jpg",
@@ -144,7 +144,7 @@ const products = [
    },
    {
     name: "Giày MLB LA DODGERS BIG BALL CHUNKY A Nam Nữ Rep 1:1",
-    categoryId: "MLB",
+    categoryId: "6264204d25ebccdc847d3109",
     description: "MLB LA DODGERS BIG BALL CHUNKY A Là thương hiệu đến từ Hàn Quốc, mẫu giày sở hữu nhiều phong cách lạ và đẹp, đây được xem là mẫu giày có nhiều đột phá trong thiết kết của giày sục mlb",
     price: 699000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/04/MLB-LA-DODGERS-BIG-BALL-CHUNKY-A-1.jpg",
@@ -157,7 +157,7 @@ const products = [
    },
    {
     name: "Giày MLB Monogram black cao cấp Rep 1:1",
-    categoryId: "MLB",
+    categoryId: "6264204d25ebccdc847d3109",
     description: "MLB Chunky Monogram LT New York Yankees là mẫu giày hot của dòng sản thương hiệu Giày mlb monogram, Đôi giày là sự lựa chọn hoàn hảo cho mọi mọi người, mẫu sneaker phong cách này đánh giấu tên tuổi của mẫu sneaker trên thị trường,",
     price: 899000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/07/MLB-Chunky-Monogram-LT-New-York-Yankees-1-350x350.jpg",
@@ -169,9 +169,9 @@ const products = [
     rating: 0
    },
    {
-    name: "Giày Sneaker MLB MICKEY BOSTON Rep 1:1",
-    categoryId: "MLB",
-    description: "Giày Sneaker MLB ‘MICKEY’ BOSTON MLB Big Ball Chunky chính là “hot item” đến từ MLB Korea – hãng thời trang tại Hàn Quốc. Hãng này chuyên thiết kế và sản xuất tất cả từ quần áo, váy cho đến những phụ kiện như mũ, túi, tất,",
+    name: "Giày Nike MLB MICKEY BOSTON Rep 1:1",
+    categoryId: "6264204d25ebccdc847d3109",
+    description: "Giày Nike MLB ‘MICKEY’ BOSTON MLB Big Ball Chunky chính là “hot item” đến từ MLB Korea – hãng thời trang tại Hàn Quốc. Hãng này chuyên thiết kế và sản xuất tất cả từ quần áo, váy cho đến những phụ kiện như mũ, túi, tất,",
     price: 999000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/05/MLB-MICKEY-BOSTON-RED-SOX-BIG-BALL-CHUNKY.jpg",
     imageBanner: "https://1sneaker.vn/wp-content/uploads/2021/05/SNEAKER-MLB-MICKEY-BOSTON-RED-SOX-BIG-BALL-CHUNKY-6.jpg",
@@ -183,7 +183,7 @@ const products = [
    },
    {
     name: "Giày Sục MLB NY Đạp Gót Đen Trắng VNXK",
-    categoryId: "MLB",
+    categoryId: "6264204d25ebccdc847d3109",
     description: "Giày sục mlb ny đạp gót Đen phối màu đen và chữ là mẫu giày hot nằm trong danh mục giày giày mlb rep 11 được yêu thích trong những năm gần đây, đây cũng được xem là mẫu giày sneaker được các bạn trẻ săn đón rất là nhiều,",
     price: 249000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/07/giay-suc-mlb-ny-dap-got-den-trang-4-350x350.jpg",
@@ -196,7 +196,7 @@ const products = [
    },
    {
     name: "Gucci NY Rhyton NY New York Yankees Nam & Nữ Rep™ 1:1",
-    categoryId: "MLB",
+    categoryId: "6264204d25ebccdc847d3109",
     description: "Gucci Rhyton NY New York Yankees Nam & Nữ Rep™ 1:1 mẫu giày được đánh giá khá là chất lượng cũng như phong cách trẻ trung đến từ thương hiệu sa xỉ thời trang lấn sân qua ngành sneaker chất lượng.nn",
     price: 990000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/11/gucci-rhyton-ny-new-york-yankees-nam-nu-rep%E2%84%A211-350x350.jpg",
@@ -209,8 +209,8 @@ const products = [
    },
    {
     name: "MLB Bẩn NY Dirty Big Ball Chunky Rep+",
-    categoryId: "MLB",
-    description: "MLB Bẩn NY Dirty Big Ball Chunky Rep+ được bán tại 1Sneaker với bản chuẩn 1:1 có mức giá khá là mềmnĐôi giày đi êm ái, được nhiều bạn lựa chọn làm đôi giày để đi học, đi chơi hay đi làmnVới màu không quá bẩn nhiều sẽ phù hợp cho các bạn có cá tính khác nhau",
+    categoryId: "6264204d25ebccdc847d3109",
+    description: "MLB Bẩn NY Dirty Big Ball Chunky Rep+ được bán tại Nike với bản chuẩn 1:1 có mức giá khá là mềmnĐôi giày đi êm ái, được nhiều bạn lựa chọn làm đôi giày để đi học, đi chơi hay đi làmnVới màu không quá bẩn nhiều sẽ phù hợp cho các bạn có cá tính khác nhau",
     price: 990000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/04/MLB-NEW-YORK-YANKEES-VINTAGE-LT-BIG-BALL-CHUNKY.jpg",
     imageBanner: "https://1sneaker.vn/wp-content/uploads/2021/05/mlb-ban-ny-dirty-big-ball-chunky-3-1024x1024.jpg",
@@ -222,7 +222,7 @@ const products = [
    },
    {
     name: "MLB dodgers Big Ball Chunky A Rep 1:1",
-    categoryId: "MLB",
+    categoryId: "6264204d25ebccdc847d3109",
     description: "MLB dodgers Big Ball Chunky A là dòng sản phẩm của Giày Dodgers đến từ Hàn Quốc này, nếu ban là người yêu giày sneaker thì sẽ không thể ko biết đến những đôi giày của hãng tung ra thị trường với những phiên bản độc đáo được giới trẻ nước này yêu thích và lựa chọn làm mẫu giày để đi học, đi chơi hàng ngày’",
     price: 999000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/07/MLB-dodgers-Big-Ball-Chunky-A-350x350.jpg",
@@ -235,7 +235,7 @@ const products = [
    },
    {
     name: "MLB NY đổi màu 1:1 Rep 11 Xịn Xò",
-    categoryId: "MLB",
+    categoryId: "6264204d25ebccdc847d3109",
     description: "MLB NY đổi màu vẫn là mẫu giày hot trong năm nay, với nhà mlb rep 11 thì bạn không bao giờ chê vào đâu được, với mẫu giày chất lượng và có tính ổn định cao, bảo vệ đôi chân của bận trong mọi tình huống.",
     price: 699000,
     image: "https://1sneaker.vn/wp-content/uploads/2022/02/mlb-ny-doi-mau-11-rep-11-350x350.jpg",
@@ -248,7 +248,7 @@ const products = [
    },
    {
     name: "Balenciaga Đỏ Xanh Triple S Trainer Blue Red 2018",
-    categoryId: "Balenciaga",
+    categoryId: "62640397576ff9cf68492b14",
     description: "Giày Balenciaga Triple S cao cấp Trainer ‘Blue Red’ 2018 483513 W06E3 4365 bản phối màu 2018 chất lừ đến từ thương hiệu đình đám Balenciaga",
     price: 1250000,
     image: "https://1sneaker.vn/wp-content/uploads/2020/08/Triple-S-Trainer-Blue-Red-2018-1.jpg",
@@ -261,7 +261,7 @@ const products = [
    },
    {
     name: "Balenciaga Đen Triple S Trainer Black Red Rep 1:1",
-    categoryId: "Balenciaga",
+    categoryId: "62640397576ff9cf68492b14",
     description: "Với những thiết kế mới mẻ khác lạ, bắt mắt. Đôi giày balenciaga triple s được sử dụng chất liệu da dê cao cấp và lưới. Phần da vừa giúp cho đôi giày thêm sang trọng, dễ dàng vệ sinh. Phần lưới giúp trang trí thêm phần bắt mắt cho đôi giày củng như giúp điều hòa không khí tối ưu nhất.",
     price: 1250000,
     image: "https://1sneaker.vn/wp-content/uploads/2020/08/Balenciaga-Triple-S-Trainer-Black-Red-2.jpg",
@@ -274,7 +274,7 @@ const products = [
    },
    {
     name: "Balenciaga Track 3.0 Rep 11 mầu Xanh Đen REP 1:1",
-    categoryId: "Balenciaga",
+    categoryId: "62640397576ff9cf68492b14",
     description: "Lọt top “Một trong những mẫu sneaker đáng mua nhất trong năm 2018”, Balenciaga Track Xanh dương Xanh lá trở thành sản phẩm được “săn đón” nhất trong những năm gần đây và chưa hề có dấu hiệu hạ nhiệt. Nếu có điều kiện về kinh tế thì việc chi $705 cho một đôi giày là không hề “phí”, bởi nó khẳng định gout cá tính và thẩm mỹ của bạn.",
     price: 1239000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/08/balenciaga-track-3.0-rep-11-mau-xanh-den-rep-11-350x350.jpg",
@@ -287,7 +287,7 @@ const products = [
    },
    {
     name: "Balenciaga Trip s Đế Khí mầu Hồng Vàng",
-    categoryId: "Balenciaga",
+    categoryId: "62640397576ff9cf68492b14",
     description: "Balenciaga Trip s Đế Khí mầu Hồng Vàng đôi giày xa xỉ và có giá thành khá là cao cũng là đôi giày luôn nằm trong top những đôi giày chán chạy nhất mọi thời đại được Balenciaga sản xuất.",
     price: 1239000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/08/balenciaga-trip-s-de-khi-mau-hong-vang-5-1024x726.jpg",
@@ -300,7 +300,7 @@ const products = [
    },
    {
     name: "Balenciaga Triple S Black Đen Full Bản Sạch Replica™ 1:1",
-    categoryId: "Balenciaga",
+    categoryId: "62640397576ff9cf68492b14",
     description: "Balenciaga Triple S Black Đen Full Bản Sạch Replica™ 1:1 đôi giày luôn nằm trong bộ sưu tập giày sneaker có doanh số bán chạy và được nhiều người yêu giày balen lưa chọn đến từ thương hiệu xa xỉ.",
     price: 999000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/05/20-1.jpg",
@@ -313,7 +313,7 @@ const products = [
    },
    {
     name: "Balenciaga Triple S Clear Sole Pink Rep 1:1",
-    categoryId: "Balenciaga",
+    categoryId: "62640397576ff9cf68492b14",
     description: "Những mẫu giày Balenciaga đế khí hiện đại Triple S là chunky sneaker không những sở hữu thiết kế độc đáo mà còn được trang bị chất liệu cao cấp, nổi bật nhất là da lộn, một trong những thế mạnh của dòng túi Balenciaga vốn luôn gắn liền tên tuổi của Balenciaga trước đây được giới nhà giàu biết đến, với đôi giày Balenciaga Triple S Clear Sole Pink  sẽ cho bạn 1 cảm giác rất là lạ",
     price: 1250000,
     image: "https://1sneaker.vn/wp-content/uploads/2020/08/balenciaga-triple-s-clear-sole-pink-rep-11-4-1024x656.jpg",
@@ -326,7 +326,7 @@ const products = [
    },
    {
     name: "Balenciaga Triple S Red Balenciaga đỏ Mặt Replica 1:1",
-    categoryId: "Balenciaga",
+    categoryId: "62640397576ff9cf68492b14",
     description: "Balenciaga Triple S Red Balenciaga đỏ Full Replica 1:1 phong cách, đôi giày nổi bật đẹp được nhiều bạn yêu thích cũng như đẳng cấp của thương hiệu",
     price: 999000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/05/Giay-Balenciaga-Triple-S-Red-Balenciaga-do-rep-11.jpg",
@@ -339,7 +339,7 @@ const products = [
    },
    {
     name: "BALENCIAGA TRIPLE S TRAINER VÀNG XANH NAM, NỮ Rep 1:1",
-    categoryId: "Balenciaga",
+    categoryId: "62640397576ff9cf68492b14",
     description: "Giày Balenciaga Triple S  Trainer 2.0 ‘Green Yellow’ 2018 sở hữu thiết kế thuộc hạng “nặng” theo cả nghĩa đen lẫn nghĩa bóng. Nếu đặt nó cạnh một bàn chân khủng long hay quái vật thời tiền sử nào đấy hẳn sẽ chẳng mấy khác biệt vì từng đường nét trên giày đều thể hiện sự nổi loạn đến bất quy tắc.",
     price: 999000,
     image: "https://1sneaker.vn/wp-content/uploads/2020/08/BALENCIAGA-TRIPLE-S-TRAINER-V%C3%80NG-XANH.jpg",
@@ -352,7 +352,7 @@ const products = [
    },
    {
     name: "Giày Balen Đế Khí Trắng Triple S Clear Sole White Rep 1:1",
-    categoryId: "Balenciaga",
+    categoryId: "62640397576ff9cf68492b14",
     description: "Được phát triển bởi giám đốc thương hiệu của hãng. Nhiều người vẫn quen gọi là giày Balen. Từ khi ra mắt, mẫu giày này đã đi đầu trong thay đổi nhận thức về các quy tắc thể thao đường phố. Các quan niệm về sở hữu chiếc giày nhỏ nhắn, gọn gàng đã được thay thế bởi những đôi giày cỡ lớn, thậm chí trông có phần hầm hố và cồng kềnh.",
     price: 999000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/05/19-1.jpg",
@@ -365,8 +365,8 @@ const products = [
    },
    {
     name: "Giày Balenciaga Cam Triple S Clear Sole Orange Grey Black Rep 1:1",
-    categoryId: "Balenciaga",
-    description: "Giày Balenciaga Triple S chất lượng Clear Sole “Orange/White/Grey” – Màn khai pháo đã mang giày Balenciaga mới nhất – một thương hiệu thời trang cao cấp lần đầu tiên đặt chân lên vùng đất Sneaker màu mỡ, cũng là một trong số những phát hành khơi mào cho trào lưu Chunky Sneaker (giày “đồ sộ”) lên ngôi. Nếu muốn đem vào tủ giày thêm những sự lựa chọn phá cách và đầy táo bạo thì Triple S hẳn sẽ là cái tên mà bạn khó lòng có thể bỏ qua.",
+    categoryId: "62640397576ff9cf68492b14",
+    description: "Giày Balenciaga Triple S chất lượng Clear Sole “Orange/White/Grey” – Màn khai pháo đã mang giày Balenciaga mới nhất – một thương hiệu thời trang cao cấp lần đầu tiên đặt chân lên vùng đất Nike màu mỡ, cũng là một trong số những phát hành khơi mào cho trào lưu Chunky Nike (giày “đồ sộ”) lên ngôi. Nếu muốn đem vào tủ giày thêm những sự lựa chọn phá cách và đầy táo bạo thì Triple S hẳn sẽ là cái tên mà bạn khó lòng có thể bỏ qua.",
     price: 910000,
     image: "https://1sneaker.vn/wp-content/uploads/2020/08/Balenciaga-Triple-S-Clear-Sole-Orange-Grey-Black.jpg",
     imageBanner: "https://1sneaker.vn/wp-content/uploads/2020/08/Balenciaga-Triple-S-Clear-Sole-Orange-Grey-Black-3.jpg",
@@ -378,7 +378,7 @@ const products = [
    },
    {
     name: "Giày Balenciaga Track 3.0 full trắng",
-    categoryId: "Balenciaga",
+    categoryId: "62640397576ff9cf68492b14",
     description: "Hút mắt không kém là phối màu Balenciaga Track 3.0 xám – vàng, “chú ong thợ” đắt đỏ của làng sneaker thế giới đã sớm lọt vào mắt xanh của nhiều fashionista, để cho ra nhiều outfit “chất phát ngất” ngay mùa hè vừa qua.",
     price: 999000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/08/giay-balenciaga-track-3.0-full-trang-350x350.jpg",
@@ -391,7 +391,7 @@ const products = [
    },
    {
     name: "Giày Balenciaga Track 3.0 Full Yellow Vàng Rep 1:1",
-    categoryId: "Balenciaga",
+    categoryId: "62640397576ff9cf68492b14",
     description: "Balenciaga Track 3.0 Full Yellow Vàng Chắc hẳn sẽ là đôi giày cũng siêu chất của nhà Balen,Khi những dòng sản phẩm như Balenciaga Speed Trainer và Balen ciaga Triple S. Nhưng nếu bạn tưởng rằng Balenciaga Triple S là đôi giày to nhất thế giới từng được biết đến thì bạn đã hơi vội vàng, bởi trong dòng sản phẩm sinh sau của họ – giày Balenciaga Track 3.0 còn to và khủng khiếp hơn nhiều,",
     price: 999000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/08/giay-balenciaga-track-3-14-768x513.jpg",
@@ -404,7 +404,7 @@ const products = [
    },
    {
     name: "Giày Balenciaga Track 3.0 Vàng",
-    categoryId: "Balenciaga",
+    categoryId: "62640397576ff9cf68492b14",
     description: "Giày Balenciaga Track 3.0 Vàng đôi giày có thiết kế hầm hố, so với người đàn anh Balenciaga Triple S, có phần cá tính hơn vì đây được xem mà bản phối màu mùa hè đẹp với tông màu vàng và xám.",
     price: 999000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/08/giay-balenciaga-track-3.0-vang-350x350.jpg",
@@ -417,7 +417,7 @@ const products = [
    },
    {
     name: "Giày Balenciaga Trắng Wmns Triple S Trainer ‘White’ 2018 Rep 1:1",
-    categoryId: "Balenciaga",
+    categoryId: "62640397576ff9cf68492b14",
     description: "Là một đôi giày với phong cách dad sneakers hầm hố, đang nổi đình nổi đám trong làng mốt thế giới, đặc biệt là streetwear. Thiết kế của đôi giày Balenciaga Triple S là sự pha trộn của 3 dòng giày gồm chạy bộ, bóng rổ và điền kinh. Dòng giày được phát triển bởi giám đốc sáng tạo của hãng thời trang sang trọng Balenciaga đồng thời cũng là cha đẻ của “kẻ gây rối” Vetement – Demna Gvasalia.",
     price: 999000,
     image: "https://1sneaker.vn/wp-content/uploads/2020/08/Balenciaga-Wmns-Triple-S-Trainer-White.jpg",
@@ -430,7 +430,7 @@ const products = [
    },
    {
     name: "Giày Balenciaga Triple S đế 7 màu – Clear Sole Rainbow",
-    categoryId: "Balenciaga",
+    categoryId: "62640397576ff9cf68492b14",
     description: "Balenciaga là đôi giày đến từ nhà thương hiệu balen nước Ý, tuy với vào thị trường sneaker được 1 thời gian ngắn, nhưng những đôi giày này luôn nằm trong top những đôi giày bán chạy nhất mọi thời đại được các tín đồ nổi loạn săn lùng",
     price: 1239000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/08/giay-balenciaga-triple-s-de-7-mau-clear-sole-rainbow-7-2048x1490.jpg",
@@ -443,7 +443,7 @@ const products = [
    },
    {
     name: "Giày Balenciga Trip s Đế Khí màu Xanh Vàng",
-    categoryId: "Balenciaga",
+    categoryId: "62640397576ff9cf68492b14",
     description: "Nói và đánh giá đôi giày có thể nói đôi giày này siêu bự đôi giày sẽ không thể phù hợp được với tất cả mọi người, đôi giày mang cho mình 1 phong cách hầm hố chỉ dành cho nhưng bạn cá tính nổi loạn,",
     price: 999000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/08/giay-balenciga-trip-s-de-khi-mau-xanh-vang-4-1024x649.jpg",
@@ -455,9 +455,9 @@ const products = [
     rating: 0
    },
    {
-    name: "Giày Sneaker Balenciaga TRIPLE S XANH DƯƠNG Đế Khí",
-    categoryId: "Balenciaga",
-    description: "Giày Sneaker Balenciaga TRIPLE S XANH DƯƠNG Đế Khí Nằm trong top 10 đôi giày sneaker bán chạy của nhà Balencia đế khí với bản phối màu siêu đẹp được những người yêu giày sneaeker săn đón",
+    name: "Giày Nike Balenciaga TRIPLE S XANH DƯƠNG Đế Khí",
+    categoryId: "62640397576ff9cf68492b14",
+    description: "Giày Nike Balenciaga TRIPLE S XANH DƯƠNG Đế Khí Nằm trong top 10 đôi giày sneaker bán chạy của nhà Balencia đế khí với bản phối màu siêu đẹp được những người yêu giày sneaeker săn đón",
     price: 1239000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/08/balenciaga-triple-s-xanh-duong-de-khi-5_result-2048x1677.jpg",
     imageBanner: "https://1sneaker.vn/wp-content/uploads/2021/08/balenciaga-triple-s-xanh-duong-de-khi-6_result.jpg",
@@ -469,7 +469,7 @@ const products = [
    },
    {
     name: "Giày Thể Thao Balenciaga Triple S Trainer Grey 2018 Rep 1:1",
-    categoryId: "Balenciaga",
+    categoryId: "62640397576ff9cf68492b14",
     description: "Giày Balenciaga Triple S đẹp Trainer Grey 2018 khi đập vào mắt bạn là 1 thiết kế hầm hố có có thiết kế khá hiếm hoi về độ đồ sộ của em nó, Được xem là 1 trong những mẫu giày sang chảnh nhất cho tới thời điểm hiện tại bây giờ, Balenciaga Triple S Trainer vẫn là dòng được yêu thích nhiều nhất cũng như độ hót của nó.",
     price: 1250000,
     image: "https://1sneaker.vn/wp-content/uploads/2020/08/Balenciaga-Triple-S-Trainer-Grey-2018.jpg",
@@ -482,7 +482,7 @@ const products = [
    },
    {
     name: "Adidas Alphabounce Beyond Black Đen Trắng Rep 1:1",
-    categoryId: "Adidas ",
+    categoryId: "6266c18b9db6c1aed2bfa688",
     description: "Mẫu giày chạy được thiết kế cho các vận động viên chạy bộ muốn trở thành người xuất sắc nhất trong bộ môn của mình. Thân trên bằng lưới không đường may với các vùng tăng cường để hỗ trợ chuyển động đa chiều.nn",
     price: 799000,
     image: "https://1sneaker.vn/wp-content/uploads/2020/07/Alphabounce-Beyond-Black-All-Full-Den.jpg",
@@ -495,7 +495,7 @@ const products = [
    },
    {
     name: "Adidas Alphabounce Trắng Beyond Cloud White Rep 1:1",
-    categoryId: "Adidas ",
+    categoryId: "6266c18b9db6c1aed2bfa688",
     description: "Về thiết kế, sản phẩm có thiết kế tối giản mang hơi hướng tương lai với form dáng liền mạch. Phủ bên ngoài lớp vỏ chắc chắn là những đường vân sọc dập nổi lạ mắt. Cổ giày cao ôm vào chân cùng heel-tab giúp việc xỏ giày dễ dàng và đem đến cảm giác đi lại thoải mái ngay trong lần trải nghiệm đầu tiên.",
     price: 799000,
     image: "https://1sneaker.vn/wp-content/uploads/2020/07/Alphabounce-Beyond-Cloud-White-2-600x600.jpg",
@@ -508,11 +508,11 @@ const products = [
    },
    {
     name: "Adidas Đen Prophere All Full Đen Triple Black Rep 1:1",
-    categoryId: "Adidas ",
+    categoryId: "6266c18b9db6c1aed2bfa688",
     description: "Giày đi bộ adidas nam là đôi dòng giày được ưa chộng cũng như được bán nhiều nhất trên mọi mặt trận giày thể Thao Giày Adidas prophere",
     price: 649000,
-    image: "https://1sneaker.vn/wp-content/uploads/2020/07/giay-the-thao-Sneaker-Adidas-Prophere-Triple-Black-Nam-N%E1%BB%AF.jpg",
-    imageBanner: "https://1sneaker.vn/wp-content/uploads/2020/07/giay-the-thao-Sneaker-Adidas-Prophere-Triple-Black-Nam-N%E1%BB%AF-4.jpg",
+    image: "https://1sneaker.vn/wp-content/uploads/2020/07/giay-the-thao-Nike-Adidas-Prophere-Triple-Black-Nam-N%E1%BB%AF.jpg",
+    imageBanner: "https://1sneaker.vn/wp-content/uploads/2020/07/giay-the-thao-Nike-Adidas-Prophere-Triple-Black-Nam-N%E1%BB%AF-4.jpg",
     countInStock: 20,
     active: true,
     discountID: "",
@@ -521,7 +521,7 @@ const products = [
    },
    {
     name: "Adidas EQT Bask ADV đen xanh Rep 1:1",
-    categoryId: "Adidas ",
+    categoryId: "6266c18b9db6c1aed2bfa688",
     description: "Giày đi bộ adidas nam là đôi dòng giày được ưa chộng cũng như được bán nhiều nhất trên mọi mặt trận giày thể Thao Giày Adidas prophere",
     price: 699000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/07/Adidas-EQT-Bask-ADV-den-xanh-1-350x350.jpg",
@@ -534,7 +534,7 @@ const products = [
    },
    {
     name: "Adidas EQT Bask ADV trắng đen phản quang Rep 1:1",
-    categoryId: "Adidas ",
+    categoryId: "6266c18b9db6c1aed2bfa688",
     description: "Giày đi bộ adidas nam là đôi dòng giày được ưa chộng cũng như được bán nhiều nhất trên mọi mặt trận giày thể Thao Giày Adidas prophere",
     price: 699000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/07/Adidas-EQT-Bask-ADV-trang-den-phan-quang-4-350x350.jpg.webp",
@@ -547,7 +547,7 @@ const products = [
    },
    {
     name: "Adidas EQT Bask ADV Xám Cam Rep 1:1",
-    categoryId: "Adidas ",
+    categoryId: "6266c18b9db6c1aed2bfa688",
     description: "Giày đi bộ adidas nam là đôi dòng giày được ưa chộng cũng như được bán nhiều nhất trên mọi mặt trận giày thể Thao Giày Adidas prophere",
     price: 699000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/07/EQT-Xam-Cam-1-350x350.jpg",
@@ -560,7 +560,7 @@ const products = [
    },
    {
     name: "Adidas EQT Xám Xanh Bask ADV Grey Sub Green For Rep 1:1",
-    categoryId: "Adidas ",
+    categoryId: "6266c18b9db6c1aed2bfa688",
     description: "Giày Thể Thao Adidas EQT Bask ADV xám xanh là hàng rep 1:1, đôi giày có thể giúp bạn và hỗ trợ các hoạt động thường ngày,, đây là mẫu giày êm và thoải mái,",
     price: 699000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/03/Adidas-EQT-Bask-ADV-xam-xanh-350x350.jpg",
@@ -573,8 +573,8 @@ const products = [
    },
    {
     name: "Adidas Falcon Acid House Rep 1:1",
-    categoryId: "Adidas ",
-    description: "Falcon Acid House là những đôi giày mang phong cách thể thao đối với người yêu giày Sneaker Adidas 3 sọc này, từ lúc ra cho đến khi lên quần luôn trong tình trạng cháy hàng của mọi mặt trận mà chúng không không thể nào hiểu được đó chính là sự thay đổi về mẫu mã cũng như sự độc đáo của đôi giày giày adidas falcon giá rẻ thể hiện ra bên ngoài.",
+    categoryId: "6266c18b9db6c1aed2bfa688",
+    description: "Falcon Acid House là những đôi giày mang phong cách thể thao đối với người yêu giày Nike Adidas 3 sọc này, từ lúc ra cho đến khi lên quần luôn trong tình trạng cháy hàng của mọi mặt trận mà chúng không không thể nào hiểu được đó chính là sự thay đổi về mẫu mã cũng như sự độc đáo của đôi giày giày adidas falcon giá rẻ thể hiện ra bên ngoài.",
     price: 920000,
     image: "https://1sneaker.vn/wp-content/uploads/2020/07/Gi%C3%A0y-th%E1%BB%83-thao-Falcon-Acid-House.jpg",
     imageBanner: "https://1sneaker.vn/wp-content/uploads/2020/07/Gi%C3%A0y-th%E1%BB%83-thao-Falcon-Acid-House-2.jpg",
@@ -586,8 +586,8 @@ const products = [
    },
    {
     name: "Adidas Falcon Triple White trắng Rep 1:1",
-    categoryId: "Adidas ",
-    description: "Là mẫu giày phong các thể thao từ khi ra mắt được xem là 1 trong những đôi giày luôn được cháy hàng trên mọi mặt trận, những người yêu giày Sneaker thường sẽ phải chờ rất là lâu mới mua được",
+    categoryId: "6266c18b9db6c1aed2bfa688",
+    description: "Là mẫu giày phong các thể thao từ khi ra mắt được xem là 1 trong những đôi giày luôn được cháy hàng trên mọi mặt trận, những người yêu giày Nike thường sẽ phải chờ rất là lâu mới mua được",
     price: 925000,
     image: "https://1sneaker.vn/wp-content/uploads/2020/07/gi%C3%A0y-th%E1%BB%83-thao-Falcon-Triple-White-m%C3%A0u-tr%C4%83ng-6-600x600.jpg",
     imageBanner: "https://1sneaker.vn/wp-content/uploads/2020/07/gi%C3%A0y-th%E1%BB%83-thao-Falcon-Triple-White-m%C3%A0u-tr%C4%83ng-5-600x600.jpg",
@@ -599,8 +599,8 @@ const products = [
    },
    {
     name: "Adidas Prophere Black Orange Rep 1:1– Prophere Đen Cam",
-    categoryId: "Adidas ",
-    description: "Là mẫu giày phong các thể thao từ khi ra mắt được xem là 1 trong những đôi giày luôn được cháy hàng trên mọi mặt trận, những người yêu giày Sneaker thường sẽ phải chờ rất là lâu mới mua được",
+    categoryId: "6266c18b9db6c1aed2bfa688",
+    description: "Là mẫu giày phong các thể thao từ khi ra mắt được xem là 1 trong những đôi giày luôn được cháy hàng trên mọi mặt trận, những người yêu giày Nike thường sẽ phải chờ rất là lâu mới mua được",
     price: 640000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/07/Adidas-Prophere-Black-Orange-2-350x350.jpg",
     imageBanner: "https://1sneaker.vn/wp-content/uploads/2021/07/Adidas-Prophere-Black-Orange-1_result.jpg",
@@ -612,8 +612,8 @@ const products = [
    },
    {
     name: "Adidas Prophere Blue Rep 1:1 – Xanh Dương",
-    categoryId: "Adidas ",
-    description: "Là mẫu giày phong các thể thao từ khi ra mắt được xem là 1 trong những đôi giày luôn được cháy hàng trên mọi mặt trận, những người yêu giày Sneaker thường sẽ phải chờ rất là lâu mới mua được",
+    categoryId: "6266c18b9db6c1aed2bfa688",
+    description: "Là mẫu giày phong các thể thao từ khi ra mắt được xem là 1 trong những đôi giày luôn được cháy hàng trên mọi mặt trận, những người yêu giày Nike thường sẽ phải chờ rất là lâu mới mua được",
     price: 660000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/07/Adidas-Prophere-Blue-2-350x350.jpg",
     imageBanner: "https://1sneaker.vn/wp-content/uploads/2021/07/Adidas-Prophere-Blue-3.jpg",
@@ -625,8 +625,8 @@ const products = [
    },
    {
     name: "Adidas Prophere Maroon Rep 1:1 – Đỏ Đô",
-    categoryId: "Adidas ",
-    description: "Là mẫu giày phong các thể thao từ khi ra mắt được xem là 1 trong những đôi giày luôn được cháy hàng trên mọi mặt trận, những người yêu giày Sneaker thường sẽ phải chờ rất là lâu mới mua được",
+    categoryId: "6266c18b9db6c1aed2bfa688",
+    description: "Là mẫu giày phong các thể thao từ khi ra mắt được xem là 1 trong những đôi giày luôn được cháy hàng trên mọi mặt trận, những người yêu giày Nike thường sẽ phải chờ rất là lâu mới mua được",
     price: 660000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/07/Adidas-Prophere-Maroon-%E2%80%93-Do-Do-3-350x350.jpg.webp",
     imageBanner: "https://1sneaker.vn/wp-content/uploads/2021/07/Adidas-Prophere-Maroon-%E2%80%93-Do-Do-1.jpg",
@@ -638,8 +638,8 @@ const products = [
    },
    {
     name: "Adidas Prophere Trace Olive Rep 1:1– Xanh Rêu Cam",
-    categoryId: "Adidas ",
-    description: "Là mẫu giày phong các thể thao từ khi ra mắt được xem là 1 trong những đôi giày luôn được cháy hàng trên mọi mặt trận, những người yêu giày Sneaker thường sẽ phải chờ rất là lâu mới mua được",
+    categoryId: "6266c18b9db6c1aed2bfa688",
+    description: "Là mẫu giày phong các thể thao từ khi ra mắt được xem là 1 trong những đôi giày luôn được cháy hàng trên mọi mặt trận, những người yêu giày Nike thường sẽ phải chờ rất là lâu mới mua được",
     price: 799000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/07/Adidas-Prophere-Trace-Olive-%E2%80%93-Xanh-Reu-Cam-2-350x350.jpg",
     imageBanner: "https://1sneaker.vn/wp-content/uploads/2021/07/Adidas-Prophere-Trace-Olive-%E2%80%93-Xanh-Reu-Cam-1.jpg",
@@ -651,8 +651,8 @@ const products = [
    },
    {
     name: "Adidas Prophere Triple White Rep 1:1 – Trắng Full",
-    categoryId: "Adidas ",
-    description: "Là mẫu giày phong các thể thao từ khi ra mắt được xem là 1 trong những đôi giày luôn được cháy hàng trên mọi mặt trận, những người yêu giày Sneaker thường sẽ phải chờ rất là lâu mới mua được",
+    categoryId: "6266c18b9db6c1aed2bfa688",
+    description: "Là mẫu giày phong các thể thao từ khi ra mắt được xem là 1 trong những đôi giày luôn được cháy hàng trên mọi mặt trận, những người yêu giày Nike thường sẽ phải chờ rất là lâu mới mua được",
     price: 799000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/07/Adidas-Prophere-Triple-White-2-350x350.jpg",
     imageBanner: "https://1sneaker.vn/wp-content/uploads/2021/07/Adidas-Prophere-Triple-White-1_result.jpg",
@@ -664,8 +664,8 @@ const products = [
    },
    {
     name: "Adidas Prophere White Grey Rep 1:1 – Trắng Xám",
-    categoryId: "Adidas ",
-    description: "Là mẫu giày phong các thể thao từ khi ra mắt được xem là 1 trong những đôi giày luôn được cháy hàng trên mọi mặt trận, những người yêu giày Sneaker thường sẽ phải chờ rất là lâu mới mua được",
+    categoryId: "6266c18b9db6c1aed2bfa688",
+    description: "Là mẫu giày phong các thể thao từ khi ra mắt được xem là 1 trong những đôi giày luôn được cháy hàng trên mọi mặt trận, những người yêu giày Nike thường sẽ phải chờ rất là lâu mới mua được",
     price: 660000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/07/GIAY-SNEAKER-MOI_result-350x350.jpg",
     imageBanner: "https://1sneaker.vn/wp-content/uploads/2021/07/giay-adidas-prophere-white-grey-trang-xam-rep-11-dep-chat_result.jpg",
@@ -677,7 +677,7 @@ const products = [
    },
    {
     name: "Adidas Trắng Prophere Triple White Rep 1:1",
-    categoryId: "Adidas ",
+    categoryId: "6266c18b9db6c1aed2bfa688",
     description: "Giày Adidas Prophere Prophere Triple White 1 trong những cái tên được làm mưa làm gió trên thị trường lúc bấy giờ, được xem là 1 trong những ông lớn trong ngành khi tung ra đôi giày Prophere này sẽ không làm cho các Fan phải ngả lòng với độ hoàn thiện và đẹp hết mức có thể chiu được. Ngoài ra, bạn có thể tham khỏa thêm những mẫu  giày Adidas cho Nam  và giày Adidas cho Nữ để dành tặng cho bạn bè thân thiết.",
     price: 610000,
     image: "https://1sneaker.vn/wp-content/uploads/2020/08/Giay-the-thao-Prophere-Triple-White.jpg",
@@ -690,7 +690,7 @@ const products = [
    },
    {
     name: "Adidas Trắng Xanh Stan Smith Fairway Rep 1:1",
-    categoryId: "Adidas ",
+    categoryId: "6266c18b9db6c1aed2bfa688",
     description: "Giày Adidas Stan Smith là mẫu giày huyền htoại nổi tiếng bấc nhất của hãng giày Adidas châu Âu, Xuất hiện lần đầu tiên vào năm 1973 trai qua hơn 45 Năm lịch sử nó đã ghi dấu ấn tới hàng triệu người trên thế giới, Adidas Stan Smith được đánh gái một trong những mấu giày biểu tượng không bao giờ nỗi mối.",
     price: 649000,
     image: "https://1sneaker.vn/wp-content/uploads/2020/07/S.tan-Smith-Triple-White.jpg",
@@ -703,7 +703,7 @@ const products = [
    },
    {
     name: "Adidas Ultra Boost 20 Consortium Core Black Rep 1:1",
-    categoryId: "Adidas ",
+    categoryId: "6266c18b9db6c1aed2bfa688",
     description: "Giày adidas Ultra Boost hiệu năng cao này có thân giày bằng vải dệt kim ôm chân. … Gót giày được làm từ chất liệu elastane mềm mại cho độ ôm thoải mái hơn. Lớp đệm đàn hồi hoàn trả năng lượng cho từng sải bước tạo cảm giác như có thể chạy mãi mãi.",
     price: 799000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/07/Adidas-Ultra-Boost-20-Consortium-Core-Black-4_result.jpg",
@@ -716,8 +716,8 @@ const products = [
    },
    {
     name: "Adidas Ultra Boost 20 Dash Grey Rep 1:1",
-    categoryId: "Adidas ",
-    description: "Adidas Ultra Boost 20 Dash Grey, giày chạy bộ đến từ nhà Adidas với mẫu giày đẹp và phong cách, luôn được mọi người yêu thích, hàng có sẵn tại shop, ghé ngay 1Sneaker để mua giày adidas ultra boost giá rẻ .nn",
+    categoryId: "6266c18b9db6c1aed2bfa688",
+    description: "Adidas Ultra Boost 20 Dash Grey, giày chạy bộ đến từ nhà Adidas với mẫu giày đẹp và phong cách, luôn được mọi người yêu thích, hàng có sẵn tại shop, ghé ngay Nike để mua giày adidas ultra boost giá rẻ .nn",
     price: 749000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/07/Adidas-Ultra-Boost-20-Dash-Grey-2-350x350.jpg",
     imageBanner: "https://1sneaker.vn/wp-content/uploads/2021/07/Adidas-Ultra-Boost-20-Dash-Grey-6.jpg",
@@ -729,7 +729,7 @@ const products = [
    },
    {
     name: "Adidas Ultra Boost 20 Triple Black Đen Full Rep 1:1",
-    categoryId: "Adidas ",
+    categoryId: "6266c18b9db6c1aed2bfa688",
     description: "Giày Adidas Ultra Boost 20 Triple Black Đen Full mẫu sneaker là dòng giày adidas ultra boost 2021 được các bạn trẻ hiện nay yêu thích sử dụng bới  phong cách trẻ trung năng động, hàng luôn có sẵn tai shop với mức giá hợp lý",
     price: 749000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/07/Adidas-Ultra-Boost-20-Triple-Black-Den-Full-6.jpg",
@@ -742,7 +742,7 @@ const products = [
    },
    {
     name: "Adidas Ultra Boost 20 Triple White All White Rep 1:1",
-    categoryId: "Adidas ",
+    categoryId: "6266c18b9db6c1aed2bfa688",
     description: "Adidas Ultra Boost 20 Triple White All White mẫu giày sneaker đến từ nhà Adidas Rep 11, vừa mang phong cách trẻ trung năng động vừa hợp túi tiền nên giày Adidas Ultra Boost mới nhất được đông đảo các bạn trẻ là học sinh, sinh viên tích cực đón nhận.",
     price: 799000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/07/Adidas-Ultra-Boost-20-Triple-White-All-White-2-350x350.jpg",
@@ -755,7 +755,7 @@ const products = [
    },
    {
     name: "ADIDAS ULTRA BOOST 4.0 HỒNG NỮ Rep 1:1",
-    categoryId: "Adidas ",
+    categoryId: "6266c18b9db6c1aed2bfa688",
     description: "ADIDAS ULTRA BOOST 4.0 HỒNG NỮ Là đôi giày giày ultra boost mới nhất giành cho chị em phụ nữ yêu thích chạy bộ, mẫu giày đặc biệt này hỗ trợ chạy bộ cực nhẹ với đế bost nén cực êm",
     price: 810000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/05/ADIDAS-ULTRA-BOOST-4.0-HONG-350x350.jpg",
@@ -768,7 +768,7 @@ const products = [
    },
    {
     name: "Adidas Ultra Boost 6.0 Blue White Rep 1:1",
-    categoryId: "Adidas ",
+    categoryId: "6266c18b9db6c1aed2bfa688",
     description: "Adidas Ultra Boost 6.0 Blue White được xem là giày adidas rep 11 hcm hot nhất 2021. Sở hữu lớp đệm đàn hồi, có đường may trợ lực và công nghệ chuyển màu Hologram. Gót giày được làm từ chất liệu vải elastane mềm mại tạo cho người mang cảm giác êm ái, tạo cảm giác bước chân luôn tràn đầy năng lượng.",
     price: 799000,
     image: "https://1sneaker.vn/wp-content/uploads/2021/07/Adidas-Ultra-Boost-6.0-Blue-White-4-350x350.jpg",
