@@ -5,9 +5,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { listProducts } from "../../Redux/Actions/ProductActions";
 import Loading from "../LoadingError/Loading";
 import Message from "../LoadingError/Error";
+import { listCategories } from "../../Redux/Actions/CategoryActions";
 
 const MainProducts = () => {
   const dispatch = useDispatch();
+
+  const categoriesList = useSelector((state) => state.categoriesList);
+  const { loadingCate, errorCate, categories } = categoriesList;
 
   const productList = useSelector((state) => state.productList);
   const { loading, error, products } = productList;
@@ -17,6 +21,7 @@ const MainProducts = () => {
 
   useEffect(() => {
     dispatch(listProducts());
+    dispatch(listCategories());
   }, [dispatch, successDelete]);
 
   return (
@@ -42,10 +47,20 @@ const MainProducts = () => {
             </div>
             <div className="col-lg-2 col-6 col-md-3">
               <select className="form-select">
-                <option>Tất cả danh mục</option>
-                <option>Điện tử</option>
-                <option>Áo khoác</option>
-                <option>Khác</option>
+                {loadingCate ? (
+                  <div className='mb-5'>
+                    <Loading />
+                  </div>
+                ) : errorCate ? (
+                  <Message variant="alert-danger">{error}</Message>
+                ) : (
+                  <>
+                    <option>Chọn loại mặt hàng</option>
+                    {categories.map((category) => (
+                      <option value={category._id}>{category.categoryName}</option>
+                    ))}
+                  </>
+                )}
               </select>
             </div>
             <div className="col-lg-2 col-6 col-md-3">

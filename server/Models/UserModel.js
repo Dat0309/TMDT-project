@@ -22,7 +22,7 @@ const userSchema = mongoose.Schema(
     },
     avatar: {
       type: String,
-      required: true,
+      default: "./images/user.png"
     },
     isAdmin: {
       type: Boolean,

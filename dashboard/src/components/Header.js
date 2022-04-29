@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import $ from "jquery";
-import { useDispatch } from "react-redux";
+import { useDispatch} from "react-redux";
 import { logout } from "../Redux/Actions/userActions";
 
 const Header = () => {
   const dispatch = useDispatch();
+
   useEffect(() => {
     $("[data-trigger]").on("click", function (e) {
       e.preventDefault();
@@ -23,7 +24,7 @@ const Header = () => {
         $("body").toggleClass("aside-mini");
       }
     });
-  }, []);
+  }, [dispatch]);
 
   const logoutHandler = () => {
     dispatch(logout());

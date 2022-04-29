@@ -11,6 +11,7 @@ const Register = ({ location, history }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [telephone, setTelephone] = useState("");
 
   const dispatch = useDispatch();
   const redirect = location.search ? location.search.split("=")[1] : "/";
@@ -26,7 +27,7 @@ const Register = ({ location, history }) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(register(name, email, password));
+    dispatch(register(name, email, password, telephone));
   };
 
   return (
@@ -42,7 +43,7 @@ const Register = ({ location, history }) => {
         >
           <input
             type="text"
-            placeholder="Username"
+            placeholder="Tên người dùng"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
@@ -54,9 +55,15 @@ const Register = ({ location, history }) => {
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Mật khẩu"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+          />
+          <input
+            type="text"
+            placeholder="Số điện thoại"
+            value={telephone}
+            onChange={(e) => setTelephone(e.target.value)}
           />
 
           <button type="submit">Register</button>

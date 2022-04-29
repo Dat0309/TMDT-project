@@ -151,25 +151,25 @@ const PlaceOrderScreen = ({ history }) => {
                   <td>
                     <strong>Mua hàng</strong>
                   </td>
-                  <td>${cart.itemsPrice}</td>
+                  <td>{cart.itemsPrice}Đ</td>
                 </tr>
                 <tr>
                   <td>
                     <strong>Vận chuyển</strong>
                   </td>
-                  <td>${cart.shippingPrice}</td>
+                  <td>{cart.shippingPrice}Đ</td>
                 </tr>
                 <tr>
                   <td>
                     <strong>Phí bưu điện</strong>
                   </td>
-                  <td>${cart.taxPrice}</td>
+                  <td>{cart.taxPrice}Đ</td>
                 </tr>
                 <tr>
                   <td>
                     <strong>Thành tiền</strong>
                   </td>
-                  <td>${cart.totalPrice}</td>
+                  <td>{cart.totalPrice}Đ</td>
                 </tr>
               </tbody>
             </table>
