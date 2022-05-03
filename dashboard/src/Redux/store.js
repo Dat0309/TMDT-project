@@ -15,12 +15,14 @@ import {
   orderDetailsReducer,
   orderListReducer,
 } from "./Reducers/OrderReducres";
-import { categoryCreateReducer, categoryDeleteReducer, categoryEditReducer, categoryListReducer, categoryUpdateReducer } from "./Reducers/CategoryReducers";
+import { categoryCreateReducer, categoryDeleteReducer, categoryDetailsReducer, categoryEditReducer, categoryListReducer, categoryUpdateReducer } from "./Reducers/CategoryReducers";
+import { discountCreateReducer, discountDeleteReducer, discountEditReducer, discountListReducer, discountUpdateReducer } from "./Reducers/DiscountReducers";
 
 const reducer = combineReducers({
   userLogin: userLoginReducer,
   userList: userListReducer,
   categoriesList: categoryListReducer,
+  categoryDetail: categoryDetailsReducer,
   categoryDelete: categoryDeleteReducer,
   categoryCreate: categoryCreateReducer,
   categoryEdit: categoryEditReducer,
@@ -31,6 +33,11 @@ const reducer = combineReducers({
   productCreate: productCreateReducer,
   productEdit: productEditReducer,
   productUpdate: productUpdateReducer,
+  discountList: discountListReducer,
+  discountDelete: discountDeleteReducer,
+  discountCreate: discountCreateReducer,
+  discountEdit: discountEditReducer,
+  discountUpdate: discountUpdateReducer,
   orderList: orderListReducer,
   orderDetails: orderDetailsReducer,
   orderDeliver: orderDeliveredReducer,

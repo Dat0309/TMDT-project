@@ -18,7 +18,7 @@ const MainProducts = (props) => {
   const { loadingCate, errorCate, categories } = categoriesList;
 
   const productList = useSelector((state) => state.productList);
-  const { loading, error, products, page, pages } = productList;
+  const { loading, error, products} = productList;
 
   const productDelete = useSelector((state) => state.productDelete);
   const { error: errorDelete, success: successDelete } = productDelete;

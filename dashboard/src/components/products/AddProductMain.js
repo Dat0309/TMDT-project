@@ -47,7 +47,7 @@ const AddProductMain = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(createProduct(name, categories, price, description, image, imageBanner, countInStock));
+    dispatch(createProduct(name, category, price, description, image, imageBanner, countInStock));
   };
 
   return (
@@ -88,10 +88,13 @@ const AddProductMain = () => {
                     />
                   </div>
                   <div className="mb-4">
-                    <label htmlFor="product_price" className="form-label">
+                    <label htmlFor="product_category" className="form-label">
                       Loại mặt hàng
                     </label>
-                    <select className="form-select">
+                    <select className="form-select"
+                      onChange={(e) => setCategory(e.target.value)}
+                      value={category}
+                      id="product_category">
                       {loadingCate ? (
                         <div className='mb-5'>
                           <Loading />
@@ -102,8 +105,7 @@ const AddProductMain = () => {
                         <>
                           <option>Chọn loại mặt hàng</option>
                           {categories.map((category) => (
-                            <option value={category._id}
-                              onChange={(e) => setCategory(e.target.value)}>
+                            <option value={category._id}>
                               {category.categoryName}
                             </option>
                           ))}

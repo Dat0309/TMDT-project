@@ -69,7 +69,7 @@ productRoute.get(
       }
       : {};
     const count = await Product.countDocuments({ ...keyword });
-    const products = await Product.find({ "categoryId" : categoryId})
+    const products = await Product.find({ "categoryId": categoryId })
       .limit(pageSize)
       .skip(pageSize * (page - 1))
       .sort({ _id: -1 });
@@ -138,7 +138,7 @@ productRoute.post(
   protect,
   admin,
   asyncHandler(async (req, res) => {
-    const { name, price, description, image, countInStock } = req.body;
+    const { name, categoryId, price, description, image, imageBanner, countInStock } = req.body;
     const productExist = await Product.findOne({ name });
     if (productExist) {
       res.status(400);
@@ -146,9 +146,11 @@ productRoute.post(
     } else {
       const product = new Product({
         name,
+        categoryId,
         price,
         description,
         image,
+        imageBanner,
         countInStock,
         user: req.user._id,
       });
@@ -169,14 +171,17 @@ productRoute.put(
   protect,
   admin,
   asyncHandler(async (req, res) => {
-    const { name, price, description, image, countInStock } = req.body;
+    const { name,categoryId, price, description, image,imageBanner, countInStock, discount } = req.body;
     const product = await Product.findById(req.params.id);
     if (product) {
       product.name = name || product.name;
+      product.categoryId = categoryId || product.categoryId;
       product.price = price || product.price;
       product.description = description || product.description;
       product.image = image || product.image;
+      product.imageBanner = imageBanner || product.imageBanner;
       product.countInStock = countInStock || product.countInStock;
+      product.discount = discount || product.discount;
 
       const updatedProduct = await product.save();
       res.json(updatedProduct);

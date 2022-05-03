@@ -10,6 +10,8 @@ import { PRODUCT_UPDATE_RESET } from "../../Redux/Constants/ProductConstants";
 import { toast } from "react-toastify";
 import Message from "../LoadingError/Error";
 import Loading from "../LoadingError/Loading";
+import { categoryDetails, listCategories } from "../../Redux/Actions/CategoryActions";
+import { listDiscounts } from "../../Redux/Actions/DiscountActions";
 
 const ToastObjects = {
   pauseOnFocusLoss: false,
@@ -22,15 +24,27 @@ const EditProductMain = (props) => {
   const { productId } = props;
 
   const [name, setName] = useState("");
+  const [categoryID, setCategoryID] = useState("");
   const [price, setPrice] = useState(0);
   const [image, setImage] = useState("");
+  const [imageBanner, setImageBanner] = useState("");
   const [countInStock, setCountInStock] = useState(0);
   const [description, setDescription] = useState("");
+  const [discountID, setDiscountID] = useState("");
 
   const dispatch = useDispatch();
 
   const productEdit = useSelector((state) => state.productEdit);
   const { loading, error, product } = productEdit;
+
+  const categoriesList = useSelector((state) => state.categoriesList);
+  const { loadingCate, errorCate, categories } = categoriesList;
+
+  const categoryDetail = useSelector((state) => state.categoryDetail);
+  const { loadingCateDetail, errorCateDetail, category } = categoryDetail;
+
+  const discountList = useSelector((state) => state.discountList);
+  const { loadingDis, errorDis, discounts } = discountList;
 
   const productUpdate = useSelector((state) => state.productUpdate);
   const {
@@ -40,6 +54,8 @@ const EditProductMain = (props) => {
   } = productUpdate;
 
   useEffect(() => {
+    dispatch(listCategories());
+    dispatch(listDiscounts());
     if (successUpdate) {
       dispatch({ type: PRODUCT_UPDATE_RESET });
       toast.success("Product Updated", ToastObjects);
@@ -48,13 +64,17 @@ const EditProductMain = (props) => {
         dispatch(editProduct(productId));
       } else {
         setName(product.name);
+        setCategoryID(product.categoryId);
         setDescription(product.description);
         setCountInStock(product.countInStock);
         setImage(product.image);
+        setImageBanner(product.imageBanner);
         setPrice(product.price);
+        setDiscountID(product.discount);
       }
     }
-  }, [product, dispatch, productId, successUpdate]);
+    dispatch(categoryDetails(categoryID));
+  }, [product, dispatch, productId, successUpdate, categoryID]);
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -62,10 +82,13 @@ const EditProductMain = (props) => {
       updateProduct({
         _id: productId,
         name,
-        price,
-        description,
+        categoryID,
         image,
+        imageBanner,
+        description,
+        price,
         countInStock,
+        discountID,
       })
     );
   };
@@ -103,7 +126,7 @@ const EditProductMain = (props) => {
                     <>
                       <div className="mb-4">
                         <label htmlFor="product_title" className="form-label">
-                         Tên mặt hàng
+                          Tên mặt hàng
                         </label>
                         <input
                           type="text"
@@ -114,6 +137,32 @@ const EditProductMain = (props) => {
                           value={name}
                           onChange={(e) => setName(e.target.value)}
                         />
+                      </div>
+                      <div className="mb-4">
+                        <label htmlFor="product_category" className="form-label">
+                          Loại mặt hàng
+                        </label>
+                        <select className="form-select"
+                          onChange={(e) => setCategoryID(e.target.value)}
+                          value={category.categoryName}
+                          id="product_category">
+                          {(loadingCate && loadingCateDetail) ? (
+                            <div className='mb-5'>
+                              <Loading />
+                            </div>
+                          ) : (errorCate || errorCateDetail) ? (
+                            <Message variant="alert-danger">{error}</Message>
+                          ) : (
+                            <>
+                              <option>{category.categoryName}</option>
+                              {categories.map((categoryState) => (
+                                <option value={categoryState._id}>
+                                  {categoryState.categoryName}
+                                </option>
+                              ))}
+                            </>
+                          )}
+                        </select>
                       </div>
                       <div className="mb-4">
                         <label htmlFor="product_price" className="form-label">
@@ -163,6 +212,42 @@ const EditProductMain = (props) => {
                           required
                           onChange={(e) => setImage(e.target.value)}
                         />
+                      </div>
+                      <div className="mb-4">
+                        <label className="form-label">Ảnh bìa</label>
+                        <input
+                          className="form-control"
+                          type="text"
+                          value={imageBanner}
+                          required
+                          onChange={(e) => setImageBanner(e.target.value)}
+                        />
+                      </div>
+                      <div className="mb-4">
+                        <label htmlFor="product_dicount" className="form-label">
+                          Chương trình giảm giá
+                        </label>
+                        <select className="form-select"
+                          onChange={(e) => setDiscountID(e.target.value)}
+                          value={discountID}
+                          id="product_category">
+                          {(loadingDis && loading && loadingCate) ? (
+                            <div className='mb-5'>
+                              <Loading />
+                            </div>
+                          ) : (errorDis || error) ? (
+                            <Message variant="alert-danger">{error}</Message>
+                          ) : (
+                            <>
+                              {/* <option>{category.categoryName}</option> */}
+                              {discounts.map((discountState) => (
+                                <option value={discountState._id}>
+                                  {discountState.name}
+                                </option>
+                              ))}
+                            </>
+                          )}
+                        </select>
                       </div>
                     </>
                   )}

@@ -66,6 +66,7 @@ const productSchema = mongoose.Schema(
     categoryId:{
       type: String,
       require: true,
+      default: "",
     },
   },
   {
