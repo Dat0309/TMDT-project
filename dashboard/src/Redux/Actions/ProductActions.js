@@ -18,7 +18,7 @@ import {
 import axios from "axios";
 import { logout } from "./userActions";
 
-export const listProducts = () => async (dispatch, getState) => {
+export const listProducts = (keyword = " ", pageNumber = " ") => async (dispatch, getState) => {
   try {
     dispatch({ type: PRODUCT_LIST_REQUEST });
 
@@ -32,9 +32,9 @@ export const listProducts = () => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.get(`/api/products/all`, config);
-
-    dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
+    const { data } = await axios.get(`/api/products?keyword=${keyword}&pageNumber=${pageNumber}`, config);
+    console.log(data);
+    dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data.products });
   } catch (error) {
     const message =
       error.response && error.response.data.message
@@ -86,41 +86,41 @@ export const deleteProduct = (id) => async (dispatch, getState) => {
 // CREATE PRODUCT
 export const createProduct =
   (name, price, description, image, countInStock) =>
-  async (dispatch, getState) => {
-    try {
-      dispatch({ type: PRODUCT_CREATE_REQUEST });
+    async (dispatch, getState) => {
+      try {
+        dispatch({ type: PRODUCT_CREATE_REQUEST });
 
-      const {
-        userLogin: { userInfo },
-      } = getState();
+        const {
+          userLogin: { userInfo },
+        } = getState();
 
-      const config = {
-        headers: {
-          Authorization: `Bearer ${userInfo.token}`,
-        },
-      };
+        const config = {
+          headers: {
+            Authorization: `Bearer ${userInfo.token}`,
+          },
+        };
 
-      const { data } = await axios.post(
-        `/api/products/`,
-        { name, price, description, image, countInStock },
-        config
-      );
+        const { data } = await axios.post(
+          `/api/products/`,
+          { name, price, description, image, countInStock },
+          config
+        );
 
-      dispatch({ type: PRODUCT_CREATE_SUCCESS, payload: data });
-    } catch (error) {
-      const message =
-        error.response && error.response.data.message
-          ? error.response.data.message
-          : error.message;
-      if (message === "Not authorized, token failed") {
-        dispatch(logout());
+        dispatch({ type: PRODUCT_CREATE_SUCCESS, payload: data });
+      } catch (error) {
+        const message =
+          error.response && error.response.data.message
+            ? error.response.data.message
+            : error.message;
+        if (message === "Not authorized, token failed") {
+          dispatch(logout());
+        }
+        dispatch({
+          type: PRODUCT_CREATE_FAIL,
+          payload: message,
+        });
       }
-      dispatch({
-        type: PRODUCT_CREATE_FAIL,
-        payload: message,
-      });
-    }
-  };
+    };
 
 // EDIT PRODUCT
 export const editProduct = (id) => async (dispatch) => {

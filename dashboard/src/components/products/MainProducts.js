@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useHistory } from "react-router-dom";
 import Product from "./Product";
 import { useDispatch, useSelector } from "react-redux";
 import { listProducts } from "../../Redux/Actions/ProductActions";
@@ -7,8 +7,11 @@ import Loading from "../LoadingError/Loading";
 import Message from "../LoadingError/Error";
 import { listCategories } from "../../Redux/Actions/CategoryActions";
 
-const MainProducts = () => {
+const MainProducts = (props) => {
+  const { keyword, pagenumber } = props;
+  const [keywordSearch, setKeyword] = useState();
   const dispatch = useDispatch();
+  let history = useHistory();
 
   const categoriesList = useSelector((state) => state.categoriesList);
   const { loadingCate, errorCate, categories } = categoriesList;
@@ -19,10 +22,19 @@ const MainProducts = () => {
   const productDelete = useSelector((state) => state.productDelete);
   const { error: errorDelete, success: successDelete } = productDelete;
 
+  const submitHandler = (e) => {
+    e.preventDefault();
+    if (keywordSearch.trim()) {
+      history.push(`/search/${keywordSearch}`);
+    } else {
+      history.push("/search/");
+    }
+  };
+
   useEffect(() => {
-    dispatch(listProducts());
+    dispatch(listProducts(keyword,pagenumber));
     dispatch(listCategories());
-  }, [dispatch, successDelete]);
+  }, [dispatch, successDelete, keyword, pagenumber]);
 
   return (
     <section className="content-main">
@@ -39,11 +51,17 @@ const MainProducts = () => {
         <header className="card-header bg-white ">
           <div className="row gx-3 py-3">
             <div className="col-lg-4 col-md-6 me-auto ">
-              <input
-                type="search"
-                placeholder="Tìm kiếm mặt hàng, nguòi yêu, siêu em gái..."
-                className="form-control p-2"
-              />
+              <form onSubmit={submitHandler} className="input-group">
+                <input
+                  type="search"
+                  placeholder="Tìm kiếm mặt hàng, nguòi yêu, siêu em gái..."
+                  className="form-control p-2"
+                  onChange={(e) => setKeyword(e.target.value)}
+                />
+                <button type="submit" className="search-button">
+                  Tìm kiếm
+                </button>
+              </form>
             </div>
             <div className="col-lg-2 col-6 col-md-3">
               <select className="form-select">
