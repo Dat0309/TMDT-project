@@ -33,8 +33,8 @@ export const listProducts = (keyword = " ", pageNumber = " ") => async (dispatch
     };
 
     const { data } = await axios.get(`/api/products?keyword=${keyword}&pageNumber=${pageNumber}`, config);
-    console.log(data);
-    dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data.products });
+
+    dispatch({ type: PRODUCT_LIST_SUCCESS, payload: data });
   } catch (error) {
     const message =
       error.response && error.response.data.message

@@ -906,3 +906,14 @@ ul.row-sm {
   line-height: 0.7;
   vertical-align: bottom;
 }
+
+/* Pagination */
+.pagination .page-link {
+  padding: 10px 30px;
+  color: black;
+}
+
+.page-item.active .page-link {
+  background-color: black;
+  border: 1px solid black;
+}

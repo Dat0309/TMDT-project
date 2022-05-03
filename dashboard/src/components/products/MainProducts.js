@@ -6,6 +6,7 @@ import { listProducts } from "../../Redux/Actions/ProductActions";
 import Loading from "../LoadingError/Loading";
 import Message from "../LoadingError/Error";
 import { listCategories } from "../../Redux/Actions/CategoryActions";
+import Pagination from "./pagination";
 
 const MainProducts = (props) => {
   const { keyword, pagenumber } = props;
@@ -17,7 +18,7 @@ const MainProducts = (props) => {
   const { loadingCate, errorCate, categories } = categoriesList;
 
   const productList = useSelector((state) => state.productList);
-  const { loading, error, products } = productList;
+  const { loading, error, products, page, pages } = productList;
 
   const productDelete = useSelector((state) => state.productDelete);
   const { error: errorDelete, success: successDelete } = productDelete;
@@ -32,7 +33,7 @@ const MainProducts = (props) => {
   };
 
   useEffect(() => {
-    dispatch(listProducts(keyword,pagenumber));
+    dispatch(listProducts(keyword, pagenumber));
     dispatch(listCategories());
   }, [dispatch, successDelete, keyword, pagenumber]);
 
@@ -102,13 +103,13 @@ const MainProducts = (props) => {
           ) : (
             <div className="row">
               {/* Products */}
-              {products.map((product) => (
+              {products.products.map((product) => (
                 <Product product={product} key={product._id} />
               ))}
             </div>
           )}
 
-          <nav className="float-end mt-4" aria-label="Page navigation">
+          {/* <nav className="float-end mt-4" aria-label="Page navigation">
             <ul className="pagination">
               <li className="page-item disabled">
                 <Link className="page-link" to="#">
@@ -136,7 +137,13 @@ const MainProducts = (props) => {
                 </Link>
               </li>
             </ul>
-          </nav>
+          </nav> */}
+          {/* Pagination */}
+          <Pagination
+            pages={products.pages}
+            page={products.page}
+            keyword={keyword ? keyword : ""}
+          />
         </div>
       </div>
     </section>
