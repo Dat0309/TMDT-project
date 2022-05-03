@@ -16,12 +16,17 @@ const ToastObjects = {
 };
 const AddProductMain = () => {
   const [name, setName] = useState("");
+  const [category, setCategory] = useState("");
   const [price, setPrice] = useState(0);
   const [image, setImage] = useState("");
+  const [imageBanner, setImageBanner] = useState("");
   const [countInStock, setCountInStock] = useState(0);
   const [description, setDescription] = useState("");
 
   const dispatch = useDispatch();
+
+  const categoriesList = useSelector((state) => state.categoriesList);
+  const { loadingCate, errorCate, categories } = categoriesList;
 
   const productCreate = useSelector((state) => state.productCreate);
   const { loading, error, product } = productCreate;
@@ -31,16 +36,18 @@ const AddProductMain = () => {
       toast.success("Product Added", ToastObjects);
       dispatch({ type: PRODUCT_CREATE_RESET });
       setName("");
+      setCategory("");
       setDescription("");
       setCountInStock(0);
       setImage("");
+      setImageBanner("");
       setPrice(0);
     }
   }, [product, dispatch]);
 
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(createProduct(name, price, description, image, countInStock));
+    dispatch(createProduct(name, categories, price, description, image, imageBanner, countInStock));
   };
 
   return (
@@ -72,7 +79,7 @@ const AddProductMain = () => {
                     </label>
                     <input
                       type="text"
-                      placeholder="Type here"
+                      placeholder="Tên mặt hàng"
                       className="form-control"
                       id="product_title"
                       required
@@ -82,11 +89,35 @@ const AddProductMain = () => {
                   </div>
                   <div className="mb-4">
                     <label htmlFor="product_price" className="form-label">
+                      Loại mặt hàng
+                    </label>
+                    <select className="form-select">
+                      {loadingCate ? (
+                        <div className='mb-5'>
+                          <Loading />
+                        </div>
+                      ) : errorCate ? (
+                        <Message variant="alert-danger">{error}</Message>
+                      ) : (
+                        <>
+                          <option>Chọn loại mặt hàng</option>
+                          {categories.map((category) => (
+                            <option value={category._id}
+                              onChange={(e) => setCategory(e.target.value)}>
+                              {category.categoryName}
+                            </option>
+                          ))}
+                        </>
+                      )}
+                    </select>
+                  </div>
+                  <div className="mb-4">
+                    <label htmlFor="product_price" className="form-label">
                       Giá
                     </label>
                     <input
                       type="number"
-                      placeholder="Type here"
+                      placeholder="Thêm giá"
                       className="form-control"
                       id="product_price"
                       required
@@ -100,7 +131,7 @@ const AddProductMain = () => {
                     </label>
                     <input
                       type="number"
-                      placeholder="Type here"
+                      placeholder="Thêm số lượng"
                       className="form-control"
                       id="product_price"
                       required
@@ -111,7 +142,7 @@ const AddProductMain = () => {
                   <div className="mb-4">
                     <label className="form-label">Mô tả</label>
                     <textarea
-                      placeholder="Type here"
+                      placeholder="Thêm mô tả"
                       className="form-control"
                       rows="7"
                       required
@@ -124,10 +155,22 @@ const AddProductMain = () => {
                     <input
                       className="form-control"
                       type="text"
-                      placeholder="Enter Image URL"
+                      placeholder="URL Hình ảnh"
                       value={image}
                       required
                       onChange={(e) => setImage(e.target.value)}
+                    />
+                    <input className="form-control mt-3" type="file" />
+                  </div>
+                  <div className="mb-4">
+                    <label className="form-label">Ảnh bìa</label>
+                    <input
+                      className="form-control"
+                      type="text"
+                      placeholder="URL Hình ảnh"
+                      value={imageBanner}
+                      required
+                      onChange={(e) => setImageBanner(e.target.value)}
                     />
                     <input className="form-control mt-3" type="file" />
                   </div>

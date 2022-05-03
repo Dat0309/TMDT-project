@@ -917,3 +917,17 @@ ul.row-sm {
   background-color: black;
   border: 1px solid black;
 }
+
+.input-group {
+  height: 50px;
+  width: 150%;
+}
+
+.search-button {
+  width: 20%;
+  background-color: black;
+  color: white;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 12px;
+}
