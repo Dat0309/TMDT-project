@@ -2,7 +2,7 @@
   "name": "admin-dashboard",
   "version": "0.1.0",
   "private": true,
-  "proxy":"http://localhost:5000",
+  "proxy": "http://localhost:5000",
   "dependencies": {
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
@@ -15,7 +15,7 @@
     "react-redux": "^7.2.6",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
-    "react-toastify": "^8.1.0",
+    "react-toastify": "^8.2.0",
     "redux": "^4.1.2",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.1",

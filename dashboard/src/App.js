@@ -17,6 +17,7 @@ import PrivateRouter from "./PrivateRouter";
 import { useDispatch, useSelector } from "react-redux";
 import { listProducts } from "./Redux/Actions/ProductActions";
 import { listOrders } from "./Redux/Actions/OrderActions";
+import CategoryEditScreen from "./screens/CategoryEditScreen";
 
 function App() {
   const dispatch = useDispatch();
@@ -44,7 +45,7 @@ function App() {
             exact
           />
           <PrivateRouter path="/products" component={ProductScreen} />
-          <PrivateRouter path="/category" component={CategoriesScreen} />
+          <PrivateRouter path="/categories" component={CategoriesScreen} />
           <PrivateRouter path="/orders" component={OrderScreen} />
           <PrivateRouter path="/order/:id" component={OrderDetailScreen} />
           <PrivateRouter path="/addproduct" component={AddProduct} />
@@ -52,6 +53,10 @@ function App() {
           <PrivateRouter
             path="/product/:id/edit"
             component={ProductEditScreen}
+          />
+          <PrivateRouter
+            path="/category/:id/edit"
+            component={CategoryEditScreen}
           />
           <Route path="/login" component={Login} />
           <PrivateRouter path="*" component={NotFound} />

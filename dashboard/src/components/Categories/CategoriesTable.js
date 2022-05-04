@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import { listCategories } from "../../Redux/Actions/CategoryActions";
 import Message from "../LoadingError/Error";
 import Loading from "../LoadingError/Loading";
