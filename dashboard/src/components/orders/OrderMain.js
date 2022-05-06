@@ -3,6 +3,8 @@ import Message from "../LoadingError/Error";
 import Loading from "../LoadingError/Loading";
 import Orders from "./Orders";
 import { useSelector } from "react-redux";
+import OrderStatistics from "../Home/OrderStatistics";
+import SaleStatistics from "../Home/SalesStatistics";
 
 const OrderMain = () => {
   const orderList = useSelector((state) => state.orderList);
@@ -12,6 +14,10 @@ const OrderMain = () => {
     <section className="content-main">
       <div className="content-header">
         <h2 className="content-title">QUẢN LÝ ĐƠN HÀNG</h2>
+      </div>
+      <div className="row">
+        <OrderStatistics />
+        <SaleStatistics />
       </div>
 
       <div className="card mb-4 shadow-sm">
