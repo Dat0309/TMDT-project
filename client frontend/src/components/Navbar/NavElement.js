@@ -81,6 +81,6 @@ export const NavBtnLink = styled(Link)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #4d32d1;
-    color: #010606;
+    color: #858f8f;
   }
 `;
