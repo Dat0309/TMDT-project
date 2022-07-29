@@ -84,38 +84,7 @@ const Sidebar = () => {
                 <span className="text">Quản lý người dùng</span>
               </NavLink>
             </li>
-            <li className="menu-item">
-              <NavLink
-                activeClassName="active"
-                className="menu-link disabled"
-                to="/sellers"
-              >
-                <i className="icon fas fa-store-alt"></i>
-                <span className="text">Quản lý bán hàng</span>
-              </NavLink>
-            </li>
-
-            <li className="menu-item">
-              <NavLink
-                activeClassName="active"
-                className="menu-link disabled"
-                to="/transaction"
-              >
-                <i className="icon fas fa-usd-circle"></i>
-                <span className="text">Quản lý vận chuyển</span>
-              </NavLink>
-            </li>
-
-            <li className="menu-item">
-              <NavLink
-                activeClassName="active"
-                className="menu-link disabled"
-                to="/transaction"
-              >
-                <i className="icon fas fa-usd-circle"></i>
-                <span className="text">Quản lý kho hàng</span>
-              </NavLink>
-            </li>
+            
           </ul>
           <br />
           <br />
